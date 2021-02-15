@@ -1,4 +1,4 @@
-package com.androidnerds.doordash.ui.main;
+package com.androidnerds.doordash.presentation.ui.main;
 
 import androidx.lifecycle.ViewModelProvider;
 

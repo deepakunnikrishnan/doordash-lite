@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.androidnerds.doordash.ui.main.MainFragment;
+import com.androidnerds.doordash.presentation.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
