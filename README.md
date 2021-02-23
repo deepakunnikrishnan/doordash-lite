@@ -12,7 +12,7 @@ The project code base follows a Clean Android approach.
 2. Domain layer - UseCases
 3. Data layer - Repository Design pattern.
 
-## Libraries:
+## Libraries
 1. Android Architecture components
 2. RxJava
 3. Retrofit-OkHTTP-Gson
@@ -20,6 +20,6 @@ The project code base follows a Clean Android approach.
 5. Glide - Image Loading library
 6. JUnit - Mockito - MockWebServer
 
-## Screenshots:
+## Screenshots
 ![](screenshots/store_list.png)
 ![](screenshots/store_detail.png)
