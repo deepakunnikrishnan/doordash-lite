@@ -1,0 +1,18 @@
+{
+  "id": 38900,
+  "categoryNewStoreCustomersOnly": false,
+  "minimumSubTotalMonetaryFields": {
+    "currency": "USD",
+    "displayString": "$0.00",
+    "unitAmount": 0,
+    "decimalPlaces": 2
+  },
+  "deliveryFee": 0,
+  "deliveryFeeMonetaryFields": {
+    "currency": "USD",
+    "displayString": "$0.00",
+    "unitAmount": 0,
+    "decimalPlaces": 2
+  },
+  "minimumSubTotal": 0
+}

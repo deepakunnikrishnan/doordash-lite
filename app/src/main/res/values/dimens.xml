@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="collapsable_view_height">480dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="item_spacing">16dp</dimen>
+</resources>

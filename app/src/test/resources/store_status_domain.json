@@ -1,0 +1,9 @@
+{
+  "pickupAvailable": true,
+  "asapAvailable": true,
+  "scheduledAvailable": false,
+  "asapMinuteRange": [
+    40,
+    40
+  ]
+}

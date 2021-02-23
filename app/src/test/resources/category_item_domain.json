@@ -1,0 +1,15 @@
+{
+  "id": 425844998,
+  "name": "Coke®",
+  "sortId": 0,
+  "description": "(150 Cal.)",
+  "price": 119,
+  "active": false,
+  "priceMonetaryFields": {
+    "displayString": "$1.19",
+    "unitAmount": 119,
+    "decimalPlaces": 0
+  },
+  "basePrice": 0,
+  "photoId": 289788
+}

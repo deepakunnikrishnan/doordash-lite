@@ -1,0 +1,2562 @@
+{
+  "id": 958743,
+  "name": "McDonald's (16328-MT VIEW) POS 8/7/19-lunch",
+  "subTitle": "Lunch Menu",
+  "categories": [
+    {
+      "name": "Most Popular",
+      "title": "Most Popular",
+      "subTitle": "",
+      "active": true,
+      "sortId": 0,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 425844998,
+          "name": "Coke®",
+          "sortId": 0,
+          "description": "(150 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289788
+        },
+        {
+          "id": 210303874,
+          "name": "40 McNuggets",
+          "sortId": 0,
+          "description": "(1660 Cal.)",
+          "price": 1119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$11.19",
+            "unitAmount": 1119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 5052475
+        },
+        {
+          "id": 302474165,
+          "name": "Oreo McFlurry",
+          "sortId": 0,
+          "description": "(340 Cal.)",
+          "price": 339,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$3.39",
+            "unitAmount": 339,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 293538
+        },
+        {
+          "id": 301147381,
+          "name": "French Fries",
+          "sortId": 0,
+          "description": "(220 Cal.)",
+          "price": 269,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.69",
+            "unitAmount": 269,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365130
+        },
+        {
+          "id": 412928294,
+          "name": "10 Piece Spicy McNuggets Meal",
+          "sortId": 0,
+          "description": "(530 - 1070 Cal.)",
+          "price": 965,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.65",
+            "unitAmount": 965,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671440
+        },
+        {
+          "id": 301147380,
+          "name": "13 Cookie Tote",
+          "sortId": 0,
+          "description": "Comes with 13 cookies. (1820 - 2210 Cal.)",
+          "price": 589,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.89",
+            "unitAmount": 589,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3535125
+        },
+        {
+          "id": 301147382,
+          "name": "10 Piece McNuggets Meal",
+          "sortId": 0,
+          "description": "(460 - 1020 Cal.)",
+          "price": 979,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.79",
+            "unitAmount": 979,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2794124
+        },
+        {
+          "id": 301147410,
+          "name": "Double Quarter Pounder with Cheese Meal",
+          "sortId": 0,
+          "description": "(790 - 1350 Cal.)",
+          "price": 1119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$11.19",
+            "unitAmount": 1119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596360
+        },
+        {
+          "id": 301147379,
+          "name": "Big Mac Meal",
+          "sortId": 0,
+          "description": "(560 - 1120 Cal.)",
+          "price": 959,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.59",
+            "unitAmount": 959,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596326
+        },
+        {
+          "id": 312201947,
+          "name": "McCafé Apple Fritter",
+          "sortId": 0,
+          "description": "(510 Cal.)",
+          "price": 229,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.29",
+            "unitAmount": 229,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394672
+        }
+      ]
+    },
+    {
+      "name": "Combo Meals",
+      "title": "Combo Meals",
+      "subTitle": "",
+      "active": true,
+      "sortId": 1,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 429726781,
+          "name": "Large",
+          "sortId": 0,
+          "description": "(850 - 1090 Cal.)",
+          "price": 899,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$8.99",
+            "unitAmount": 899,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4927328
+        },
+        {
+          "id": 429726780,
+          "name": "Deluxe Crispy Chicken Sandwich Meal",
+          "sortId": 0,
+          "description": "(850 - 1090 Cal.)",
+          "price": 959,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.59",
+            "unitAmount": 959,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4927330
+        },
+        {
+          "id": 141916113,
+          "name": "Filet O Fish Meal",
+          "sortId": 0,
+          "description": "(410 - 970 Cal.)",
+          "price": 919,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.19",
+            "unitAmount": 919,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412435
+        },
+        {
+          "id": 429726783,
+          "name": "Crispy Chicken Sandwich Meal",
+          "sortId": 0,
+          "description": "(790 - 1030 Cal.)",
+          "price": 879,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$8.79",
+            "unitAmount": 879,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4927334
+        },
+        {
+          "id": 211572742,
+          "name": "6 Piece Spicy McNuggets Meal",
+          "sortId": 0,
+          "description": "(330 - 870 Cal.)",
+          "price": 858,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$8.58",
+            "unitAmount": 858,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671421
+        },
+        {
+          "id": 141916087,
+          "name": "2 Cheeseburger Meal",
+          "sortId": 0,
+          "description": "(620 - 1180 Cal.)",
+          "price": 749,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$7.49",
+            "unitAmount": 749,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2992654
+        },
+        {
+          "id": 199399535,
+          "name": "10 Piece Spicy McNuggets Meal",
+          "sortId": 0,
+          "description": "(530 - 1070 Cal.)",
+          "price": 965,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.65",
+            "unitAmount": 965,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671440
+        },
+        {
+          "id": 181764271,
+          "name": "Bacon Quarter Pounder with Cheese Meal",
+          "sortId": 0,
+          "description": "(950 - 1190 Cal.)",
+          "price": 1139,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$11.39",
+            "unitAmount": 1139,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1360433
+        },
+        {
+          "id": 151135134,
+          "name": "Quarter Pounder with Cheese Deluxe Meal",
+          "sortId": 0,
+          "description": "(950 - 1190 Cal.)",
+          "price": 979,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.79",
+            "unitAmount": 979,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1860026
+        },
+        {
+          "id": 141916115,
+          "name": "Quarter Pounder with Cheese Meal",
+          "sortId": 0,
+          "description": "(840 - 1080 Cal.)",
+          "price": 969,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.69",
+            "unitAmount": 969,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 293552
+        },
+        {
+          "id": 141916106,
+          "name": "Big Mac Meal",
+          "sortId": 0,
+          "description": "(560 - 1120 Cal.)",
+          "price": 959,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.59",
+            "unitAmount": 959,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596326
+        },
+        {
+          "id": 141916037,
+          "name": "10 Piece McNuggets Meal",
+          "sortId": 0,
+          "description": "(460 - 1020 Cal.)",
+          "price": 979,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.79",
+            "unitAmount": 979,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2794124
+        },
+        {
+          "id": 174679969,
+          "name": "Double Bacon Quarter Pounder with Cheese Meal",
+          "sortId": 0,
+          "description": "(1220 - 1460 Cal.)",
+          "price": 1289,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$12.89",
+            "unitAmount": 1289,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 629531
+        },
+        {
+          "id": 174679970,
+          "name": "Double Quarter Cheese Deluxe Meal",
+          "sortId": 0,
+          "description": "(850 - 1430 Cal.)",
+          "price": 844,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$8.44",
+            "unitAmount": 844,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4312618
+        },
+        {
+          "id": 141916075,
+          "name": "6 Piece McNuggets Meal",
+          "sortId": 0,
+          "description": "(290 - 870 Cal.)",
+          "price": 729,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$7.29",
+            "unitAmount": 729,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3098268
+        },
+        {
+          "id": 142777641,
+          "name": "Double Quarter Pounder with Cheese Meal",
+          "sortId": 0,
+          "description": "(790 - 1350 Cal.)",
+          "price": 1119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$11.19",
+            "unitAmount": 1119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596360
+        }
+      ]
+    },
+    {
+      "name": "Shareables",
+      "title": "Shareables",
+      "subTitle": "",
+      "active": true,
+      "sortId": 2,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 415800939,
+          "name": "20 Piece Spicy McNuggets",
+          "sortId": 0,
+          "description": "(1030 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 5052473
+        },
+        {
+          "id": 315380262,
+          "name": "40 McNuggets",
+          "sortId": 0,
+          "description": "(1660 Cal.)",
+          "price": 1119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$11.19",
+            "unitAmount": 1119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 5052475
+        },
+        {
+          "id": 315380263,
+          "name": "13 Cookie Tote",
+          "sortId": 0,
+          "description": "Comes with 13 cookies. (1820 - 2210 Cal.)",
+          "price": 589,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.89",
+            "unitAmount": 589,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3535125
+        }
+      ]
+    },
+    {
+      "name": "Happy Meal",
+      "title": "Happy Meal",
+      "subTitle": "",
+      "active": true,
+      "sortId": 3,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 95926739,
+          "name": "4 Piece Chicken McNugget - Happy Meal",
+          "sortId": 0,
+          "description": "(310 - 440 Cal.)",
+          "price": 499,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$4.99",
+            "unitAmount": 499,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1564203
+        },
+        {
+          "id": 95926317,
+          "name": "Hamburger - Happy Meal",
+          "sortId": 0,
+          "description": "(375 Cal.)",
+          "price": 489,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$4.89",
+            "unitAmount": 489,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1564200
+        }
+      ]
+    },
+    {
+      "name": "McCafé",
+      "title": "McCafé",
+      "subTitle": "",
+      "active": true,
+      "sortId": 4,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 95928905,
+          "name": "Mango Pineapple Smoothie",
+          "sortId": 0,
+          "description": "(200 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813934
+        },
+        {
+          "id": 95935261,
+          "name": "Strawberry Banana Smoothie",
+          "sortId": 0,
+          "description": "(190 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813929
+        },
+        {
+          "id": 145160203,
+          "name": "Americano",
+          "sortId": 0,
+          "description": "(5 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1662466
+        },
+        {
+          "id": 212889281,
+          "name": "Iced Nonfat Mocha",
+          "sortId": 0,
+          "description": "(230 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289840
+        },
+        {
+          "id": 95930700,
+          "name": "Iced Nonfat Caramel Mocha",
+          "sortId": 0,
+          "description": "(200 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813930
+        },
+        {
+          "id": 145160400,
+          "name": "Sugar Free Vanilla Latte",
+          "sortId": 0,
+          "description": "(180 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813928
+        },
+        {
+          "id": 145160436,
+          "name": "Vanilla Cappuccino",
+          "sortId": 0,
+          "description": "(200 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813920
+        },
+        {
+          "id": 145159793,
+          "name": "Hazelnut Cappuccino",
+          "sortId": 0,
+          "description": "(200 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 298720
+        },
+        {
+          "id": 95928546,
+          "name": "Nonfat Latte",
+          "sortId": 0,
+          "description": "(90 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596340
+        },
+        {
+          "id": 95933352,
+          "name": "Medium Nonfat Cappuccino",
+          "sortId": 0,
+          "description": "(100 Cal.)",
+          "price": 359,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$3.59",
+            "unitAmount": 359,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 629527
+        },
+        {
+          "id": 95931718,
+          "name": "Iced Latte",
+          "sortId": 0,
+          "description": "(90 Cal.)",
+          "price": 229,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.29",
+            "unitAmount": 229,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596347
+        },
+        {
+          "id": 145160124,
+          "name": "Iced Caramel Mocha",
+          "sortId": 0,
+          "description": "(240 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813930
+        },
+        {
+          "id": 95932524,
+          "name": "Latte",
+          "sortId": 0,
+          "description": "(150 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596340
+        },
+        {
+          "id": 95934379,
+          "name": "Iced Mocha",
+          "sortId": 0,
+          "description": "(310 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596348
+        },
+        {
+          "id": 95926952,
+          "name": "Caramel Latte",
+          "sortId": 0,
+          "description": "(260 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813925
+        },
+        {
+          "id": 95931206,
+          "name": "French Vanilla Latte",
+          "sortId": 0,
+          "description": "(240 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813928
+        },
+        {
+          "id": 145160009,
+          "name": "Sugarfree Vanilla Cappuccino",
+          "sortId": 0,
+          "description": "(140 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813920
+        },
+        {
+          "id": 145160096,
+          "name": "Cappuccino",
+          "sortId": 0,
+          "description": "(120 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 629527
+        },
+        {
+          "id": 145159805,
+          "name": "Caramel Cappuccino",
+          "sortId": 0,
+          "description": "(220 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 347256
+        },
+        {
+          "id": 95935754,
+          "name": "Medium Nonfat Vanilla Cappuccino",
+          "sortId": 0,
+          "description": "(190 Cal.)",
+          "price": 359,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$3.59",
+            "unitAmount": 359,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 629541
+        },
+        {
+          "id": 145160293,
+          "name": "Hazelnut Latte",
+          "sortId": 0,
+          "description": "(250 Cal.)",
+          "price": 229,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.29",
+            "unitAmount": 229,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 315520
+        },
+        {
+          "id": 95935349,
+          "name": "Nonfat French Vanilla Latte",
+          "sortId": 0,
+          "description": "(170 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813928
+        },
+        {
+          "id": 95933814,
+          "name": "Nonfat Caramel Mocha",
+          "sortId": 0,
+          "description": "(230 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813922
+        },
+        {
+          "id": 145160505,
+          "name": "Iced Hazelnut Coffee",
+          "sortId": 0,
+          "description": "(240 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1662468
+        },
+        {
+          "id": 95927946,
+          "name": "Caramel Frappé",
+          "sortId": 0,
+          "description": "(420 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289836
+        },
+        {
+          "id": 95926778,
+          "name": "Mocha Frappé",
+          "sortId": 0,
+          "description": "(420 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289837
+        },
+        {
+          "id": 145160297,
+          "name": "Caramel Macchiato",
+          "sortId": 0,
+          "description": "(270 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 347238
+        },
+        {
+          "id": 95927377,
+          "name": "Premium Roast Coffee",
+          "sortId": 0,
+          "description": "(0 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813941
+        },
+        {
+          "id": 95930095,
+          "name": "Decaf Coffee",
+          "sortId": 0,
+          "description": "(0 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813941
+        },
+        {
+          "id": 145159797,
+          "name": "Caramel Hot Chocolate",
+          "sortId": 0,
+          "description": "(360 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596338
+        },
+        {
+          "id": 145160262,
+          "name": "Hot Tea",
+          "sortId": 0,
+          "description": "(15 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813937
+        },
+        {
+          "id": 145160154,
+          "name": "Iced Sugar Free Vanilla Coffee",
+          "sortId": 0,
+          "description": "(140 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 436414
+        },
+        {
+          "id": 145160507,
+          "name": "Iced Caramel Macchiato",
+          "sortId": 0,
+          "description": "(210 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 347238
+        },
+        {
+          "id": 95932910,
+          "name": "Premium Hot Chocolate",
+          "sortId": 0,
+          "description": "(380 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596338
+        },
+        {
+          "id": 95929488,
+          "name": "Mocha",
+          "sortId": 0,
+          "description": "(360 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596342
+        },
+        {
+          "id": 95927580,
+          "name": "Iced French Vanilla Coffee",
+          "sortId": 0,
+          "description": "(230 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 436414
+        },
+        {
+          "id": 95928978,
+          "name": "Caramel Mocha",
+          "sortId": 0,
+          "description": "(280 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813922
+        },
+        {
+          "id": 95933050,
+          "name": "Iced Caramel Coffee",
+          "sortId": 0,
+          "description": "(270 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813939
+        },
+        {
+          "id": 95932166,
+          "name": "Iced Coffee",
+          "sortId": 0,
+          "description": "(260 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289825
+        }
+      ]
+    },
+    {
+      "name": "McCafé Bakery",
+      "title": "McCafé Bakery",
+      "subTitle": "",
+      "active": true,
+      "sortId": 5,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 275024242,
+          "name": "McCafé Cinnamon Roll",
+          "sortId": 0,
+          "description": "(560 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394666
+        },
+        {
+          "id": 107090737,
+          "name": "Apple Pie",
+          "sortId": 0,
+          "description": "(250 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365129
+        },
+        {
+          "id": 145159682,
+          "name": "2 Apple Pies",
+          "sortId": 0,
+          "description": "(480 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596350
+        },
+        {
+          "id": 121201709,
+          "name": "Strawberry & Crème Pie",
+          "sortId": 0,
+          "description": "(280 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365135
+        },
+        {
+          "id": 275024240,
+          "name": "McCafé Blueberry Muffin",
+          "sortId": 0,
+          "description": "(470 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3812036
+        },
+        {
+          "id": 108048310,
+          "name": "13 Cookie Tote",
+          "sortId": 0,
+          "description": "Comes with 13 cookies. (1820 - 2210 Cal.)",
+          "price": 589,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.89",
+            "unitAmount": 589,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3535125
+        },
+        {
+          "id": 163611107,
+          "name": "3 Pack Of Cookies",
+          "sortId": 0,
+          "description": "(420 - 510 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394678
+        },
+        {
+          "id": 108048309,
+          "name": "2 Cookies",
+          "sortId": 0,
+          "description": "(280 - 340 Cal.)",
+          "price": 139,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.39",
+            "unitAmount": 139,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289777
+        },
+        {
+          "id": 163611108,
+          "name": "1 Cookie",
+          "sortId": 0,
+          "description": "(140 - 170 Cal.)",
+          "price": 99,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.99",
+            "unitAmount": 99,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 297208
+        },
+        {
+          "id": 275024241,
+          "name": "McCafé Apple Fritter",
+          "sortId": 0,
+          "description": "(510 Cal.)",
+          "price": 229,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.29",
+            "unitAmount": 229,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394672
+        }
+      ]
+    },
+    {
+      "name": "Condiments",
+      "title": "Condiments",
+      "subTitle": "",
+      "active": true,
+      "sortId": 6,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 165582448,
+          "name": "Sugar Packet",
+          "sortId": 0,
+          "description": "Limit of 3 (15 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3715056
+        },
+        {
+          "id": 165582446,
+          "name": "Hot Mustard Dipping Sauce",
+          "sortId": 0,
+          "description": "Limit of 2 (50 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412613
+        },
+        {
+          "id": 165582467,
+          "name": "Syrup",
+          "sortId": 0,
+          "description": "Limit of 2 (190 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412649
+        },
+        {
+          "id": 165582437,
+          "name": "Honey Packet",
+          "sortId": 0,
+          "description": "Limit of 2 (50 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412602
+        },
+        {
+          "id": 165582440,
+          "name": "Creamer Packet",
+          "sortId": 0,
+          "description": "Limit of 3 (20 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412470
+        },
+        {
+          "id": 165582456,
+          "name": "Sweet N Sour Dipping Sauce",
+          "sortId": 0,
+          "description": "Limit of 2 (50 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412601
+        },
+        {
+          "id": 165582450,
+          "name": "Grape Jam",
+          "sortId": 0,
+          "description": "Limit of 2 (40 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412647
+        },
+        {
+          "id": 165582451,
+          "name": "Strawberry Preserve",
+          "sortId": 0,
+          "description": "Limit of 2 (35 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412656
+        },
+        {
+          "id": 165582458,
+          "name": "Tangy BBQ Dipping Sauce",
+          "sortId": 0,
+          "description": "Limit of 2 (45 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412603
+        },
+        {
+          "id": 165582468,
+          "name": "Creamy Ranch Sauce",
+          "sortId": 0,
+          "description": "Limit of 2 (110 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412648
+        },
+        {
+          "id": 165582454,
+          "name": "Pepper Packet",
+          "sortId": 0,
+          "description": "Limit of 3 (0 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412589
+        },
+        {
+          "id": 165582439,
+          "name": "Equal Packet",
+          "sortId": 0,
+          "description": "Limit of 3 (0 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412483
+        },
+        {
+          "id": 165582443,
+          "name": "Splenda Packet",
+          "sortId": 0,
+          "description": "Limit of 3 (0 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412477
+        },
+        {
+          "id": 165582447,
+          "name": "Butter",
+          "sortId": 0,
+          "description": "Limit of 2 (35 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412502
+        },
+        {
+          "id": 165582444,
+          "name": "Ketchup Packet",
+          "sortId": 0,
+          "description": "Limit of 5 (10 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412596
+        },
+        {
+          "id": 165582452,
+          "name": "Hot Picante Salsa",
+          "sortId": 0,
+          "description": "Limit of 2 (5 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412663
+        },
+        {
+          "id": 165582442,
+          "name": "Tangy Honey Mustard",
+          "sortId": 0,
+          "description": "Limit of 2 (60 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412550
+        },
+        {
+          "id": 165582466,
+          "name": "Mayonnaise Packet",
+          "sortId": 0,
+          "description": "Limit of 2 (90 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412478
+        },
+        {
+          "id": 165582449,
+          "name": "Spicy Buffalo",
+          "sortId": 0,
+          "description": "Limit of 2 (30 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412614
+        },
+        {
+          "id": 165582438,
+          "name": "Mustard Packet",
+          "sortId": 0,
+          "description": "Limit of 2 (5 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412597
+        },
+        {
+          "id": 165582445,
+          "name": "Salt Packet",
+          "sortId": 0,
+          "description": "Limit of 3 (0 Cal.)",
+          "price": 0,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.00",
+            "unitAmount": 0,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1412587
+        }
+      ]
+    },
+    {
+      "name": "Fries, Sides & More",
+      "title": "Fries, Sides & More",
+      "subTitle": "",
+      "active": true,
+      "sortId": 7,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 95927294,
+          "name": "French Fries",
+          "sortId": 0,
+          "description": "(220 Cal.)",
+          "price": 269,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.69",
+            "unitAmount": 269,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365130
+        },
+        {
+          "id": 95927233,
+          "name": "Apple Slices",
+          "sortId": 0,
+          "description": "(15 Cal.)",
+          "price": 99,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.99",
+            "unitAmount": 99,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3020643
+        }
+      ]
+    },
+    {
+      "name": "Sweets & Treats",
+      "title": "Sweets & Treats",
+      "subTitle": "",
+      "active": true,
+      "sortId": 8,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 132033798,
+          "name": "Snack Oreo Shamrock McFlurry",
+          "sortId": 0,
+          "description": "(370 Cal.)",
+          "price": 269,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.69",
+            "unitAmount": 269,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394653
+        },
+        {
+          "id": 95929197,
+          "name": "M&M McFlurry",
+          "sortId": 0,
+          "description": "(420 Cal.)",
+          "price": 339,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$3.39",
+            "unitAmount": 339,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1695122
+        },
+        {
+          "id": 95927692,
+          "name": "Oreo McFlurry",
+          "sortId": 0,
+          "description": "(340 Cal.)",
+          "price": 339,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$3.39",
+            "unitAmount": 339,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 293538
+        },
+        {
+          "id": 145160590,
+          "name": "2 Apple Pies",
+          "sortId": 0,
+          "description": "(480 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596350
+        },
+        {
+          "id": 121201710,
+          "name": "Strawberry & Crème Pie",
+          "sortId": 0,
+          "description": "(280 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365135
+        },
+        {
+          "id": 95929472,
+          "name": "Apple Pie",
+          "sortId": 0,
+          "description": "(250 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365129
+        },
+        {
+          "id": 95929081,
+          "name": "Shamrock Shake",
+          "sortId": 0,
+          "description": "(460 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 436470
+        },
+        {
+          "id": 95928375,
+          "name": "Vanilla Shake",
+          "sortId": 0,
+          "description": "(490 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 305946
+        },
+        {
+          "id": 109820471,
+          "name": "Caramel Sundae",
+          "sortId": 0,
+          "description": "(340 Cal.)",
+          "price": 279,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.79",
+            "unitAmount": 279,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 301031
+        },
+        {
+          "id": 95928268,
+          "name": "Strawberry Shake",
+          "sortId": 0,
+          "description": "(500 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 305960
+        },
+        {
+          "id": 95927919,
+          "name": "Chocolate Shake",
+          "sortId": 0,
+          "description": "(520 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 305944
+        },
+        {
+          "id": 109820513,
+          "name": "Hot Fudge Sundae",
+          "sortId": 0,
+          "description": "(330 Cal.)",
+          "price": 279,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.79",
+            "unitAmount": 279,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 301030
+        },
+        {
+          "id": 163611106,
+          "name": "Plain Sundae",
+          "sortId": 0,
+          "description": "(210 - 440 Cal.)",
+          "price": 269,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.69",
+            "unitAmount": 269,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2365122
+        },
+        {
+          "id": 163611109,
+          "name": "1 Cookie",
+          "sortId": 0,
+          "description": "(140 - 170 Cal.)",
+          "price": 99,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$0.99",
+            "unitAmount": 99,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 297208
+        },
+        {
+          "id": 95929392,
+          "name": "2 Cookies",
+          "sortId": 0,
+          "description": "(280 - 340 Cal.)",
+          "price": 139,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.39",
+            "unitAmount": 139,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289777
+        },
+        {
+          "id": 163611110,
+          "name": "3 Pack Of Cookies",
+          "sortId": 0,
+          "description": "(420 - 510 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394678
+        },
+        {
+          "id": 95928664,
+          "name": "13 Cookie Tote",
+          "sortId": 0,
+          "description": "Comes with 13 cookies. (1820 - 2210 Cal.)",
+          "price": 589,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.89",
+            "unitAmount": 589,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3535125
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "title": "Beverages",
+      "subTitle": "",
+      "active": true,
+      "sortId": 9,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 95930984,
+          "name": "Dasani® Bottled Water",
+          "sortId": 0,
+          "description": "(0 Cal.)",
+          "price": 209,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.09",
+            "unitAmount": 209,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1001395
+        },
+        {
+          "id": 425845002,
+          "name": "Coke®",
+          "sortId": 0,
+          "description": "(150 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289788
+        },
+        {
+          "id": 425845004,
+          "name": "Sprite®",
+          "sortId": 0,
+          "description": "(140 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289790
+        },
+        {
+          "id": 425844997,
+          "name": "Diet Coke®",
+          "sortId": 0,
+          "description": "(0 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 999433
+        },
+        {
+          "id": 425845001,
+          "name": "Powerade®",
+          "sortId": 0,
+          "description": "(80 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 301044
+        },
+        {
+          "id": 425845003,
+          "name": "Dr Pepper®",
+          "sortId": 0,
+          "description": "(140 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 289786
+        },
+        {
+          "id": 425845005,
+          "name": "Diet Dr Pepper®",
+          "sortId": 0,
+          "description": "(0 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 999435
+        },
+        {
+          "id": 425845000,
+          "name": "MIX by Sprite Tropic Berry",
+          "sortId": 0,
+          "description": "(130 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 999443
+        },
+        {
+          "id": 425844999,
+          "name": "Fanta Orange",
+          "sortId": 0,
+          "description": "(170 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 999442
+        },
+        {
+          "id": 95929802,
+          "name": "Minute Maid® Orange Juice",
+          "sortId": 0,
+          "description": "(150 Cal.)",
+          "price": 249,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.49",
+            "unitAmount": 249,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1001396
+        },
+        {
+          "id": 95929517,
+          "name": "Sweet Iced Tea",
+          "sortId": 0,
+          "description": "(170 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394607
+        },
+        {
+          "id": 95930834,
+          "name": "Chocolate Milk",
+          "sortId": 0,
+          "description": "(130 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3020642
+        },
+        {
+          "id": 95931229,
+          "name": "Honest Kids® Organic Apple Juice Drink",
+          "sortId": 0,
+          "description": "(35 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3316369
+        },
+        {
+          "id": 95929974,
+          "name": "Unsweetened Iced Tea",
+          "sortId": 0,
+          "description": "(0 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394607
+        },
+        {
+          "id": 95930096,
+          "name": "Milk",
+          "sortId": 0,
+          "description": "(130 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3316370
+        },
+        {
+          "id": 145159566,
+          "name": "Hot Tea",
+          "sortId": 0,
+          "description": "(15 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 813937
+        }
+      ]
+    },
+    {
+      "name": "Individual Items",
+      "title": "Individual Items",
+      "subTitle": "",
+      "active": true,
+      "sortId": 10,
+      "deactivated": false,
+      "items": [
+        {
+          "id": 429726784,
+          "name": "Crispy Chicken Sandwich ",
+          "sortId": 0,
+          "description": "(470 Cal.)",
+          "price": 519,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.19",
+            "unitAmount": 519,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4927335
+        },
+        {
+          "id": 301147392,
+          "name": "Filet O Fish",
+          "sortId": 0,
+          "description": "(380 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4312609
+        },
+        {
+          "id": 429726779,
+          "name": "Deluxe Crispy Chicken Sandwich ",
+          "sortId": 0,
+          "description": "(530 Cal.)",
+          "price": 599,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.99",
+            "unitAmount": 599,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4927333
+        },
+        {
+          "id": 429726782,
+          "name": "Spicy Chicken Sandwich",
+          "sortId": 0,
+          "description": "(530 Cal.)",
+          "price": 539,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.39",
+            "unitAmount": 539,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 4927332
+        },
+        {
+          "id": 301147406,
+          "name": "20 Piece McNuggets",
+          "sortId": 0,
+          "description": "(830 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 5052474
+        },
+        {
+          "id": 412928288,
+          "name": "20 Piece Spicy McNuggets",
+          "sortId": 0,
+          "description": "(1030 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 5052473
+        },
+        {
+          "id": 301147394,
+          "name": "40 McNuggets",
+          "sortId": 0,
+          "description": "(1660 Cal.)",
+          "price": 1119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$11.19",
+            "unitAmount": 1119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 5052475
+        },
+        {
+          "id": 301147393,
+          "name": "McChicken",
+          "sortId": 0,
+          "description": "(400 Cal.)",
+          "price": 249,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.49",
+            "unitAmount": 249,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 301065
+        },
+        {
+          "id": 412928289,
+          "name": "6 Piece Spicy McNuggets ",
+          "sortId": 0,
+          "description": "(310 Cal.)",
+          "price": 449,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$4.49",
+            "unitAmount": 449,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671420
+        },
+        {
+          "id": 412928287,
+          "name": "10 Piece Spicy McNuggets ",
+          "sortId": 0,
+          "description": "(520 Cal.)",
+          "price": 550,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.50",
+            "unitAmount": 550,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671437
+        },
+        {
+          "id": 301147400,
+          "name": "Quarter Pounder with Cheese Deluxe",
+          "sortId": 0,
+          "description": "(630 Cal.)",
+          "price": 659,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$6.59",
+            "unitAmount": 659,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1860025
+        },
+        {
+          "id": 301147389,
+          "name": "Bacon Quarter Pounder with Cheese",
+          "sortId": 0,
+          "description": "(630 Cal.)",
+          "price": 809,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$8.09",
+            "unitAmount": 809,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1394434
+        },
+        {
+          "id": 301147408,
+          "name": "Quarter Pounder with Cheese",
+          "sortId": 0,
+          "description": "(520 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 308918
+        },
+        {
+          "id": 301147402,
+          "name": "Big Mac",
+          "sortId": 0,
+          "description": "(550 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 596349
+        },
+        {
+          "id": 301147401,
+          "name": "McDouble",
+          "sortId": 0,
+          "description": "(380 Cal.)",
+          "price": 209,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.09",
+            "unitAmount": 209,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1564204
+        },
+        {
+          "id": 301147387,
+          "name": "Triple Cheeseburger",
+          "sortId": 0,
+          "description": "(530 Cal.)",
+          "price": 369,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$3.69",
+            "unitAmount": 369,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2204285
+        },
+        {
+          "id": 301147399,
+          "name": "Cheeseburger",
+          "sortId": 0,
+          "description": "(300 Cal.)",
+          "price": 179,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.79",
+            "unitAmount": 179,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2204277
+        },
+        {
+          "id": 301147403,
+          "name": "Hamburger",
+          "sortId": 0,
+          "description": "(250 Cal.)",
+          "price": 119,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.19",
+            "unitAmount": 119,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2204286
+        },
+        {
+          "id": 301147404,
+          "name": "Double Hamburger",
+          "sortId": 0,
+          "description": "(340 Cal.)",
+          "price": 199,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.99",
+            "unitAmount": 199,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 999786
+        },
+        {
+          "id": 301147409,
+          "name": "6 Piece McNuggets",
+          "sortId": 0,
+          "description": "(250 Cal.)",
+          "price": 459,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$4.59",
+            "unitAmount": 459,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671314
+        },
+        {
+          "id": 301147437,
+          "name": "Double Cheeseburger",
+          "sortId": 0,
+          "description": "(440 Cal.)",
+          "price": 259,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.59",
+            "unitAmount": 259,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1564202
+        },
+        {
+          "id": 301147390,
+          "name": "Double Quarter Pounder with Cheese",
+          "sortId": 0,
+          "description": "(720 Cal.)",
+          "price": 799,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$7.99",
+            "unitAmount": 799,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 301066
+        },
+        {
+          "id": 301147407,
+          "name": "Double Bacon Quarter Pounder with Cheese",
+          "sortId": 0,
+          "description": "(820 Cal.)",
+          "price": 969,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$9.69",
+            "unitAmount": 969,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 301177
+        },
+        {
+          "id": 301147433,
+          "name": "Double Quarter Cheese Deluxe",
+          "sortId": 0,
+          "description": "(830 Cal.)",
+          "price": 595,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.95",
+            "unitAmount": 595,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 3316360
+        },
+        {
+          "id": 301147395,
+          "name": "10 Piece McNuggets",
+          "sortId": 0,
+          "description": "(420 Cal.)",
+          "price": 579,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$5.79",
+            "unitAmount": 579,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671305
+        },
+        {
+          "id": 301147391,
+          "name": "Bacon McDouble",
+          "sortId": 0,
+          "description": "(460 Cal.)",
+          "price": 239,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$2.39",
+            "unitAmount": 239,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 1564207
+        },
+        {
+          "id": 301147405,
+          "name": "4 Piece McNuggets",
+          "sortId": 0,
+          "description": "(170 Cal.)",
+          "price": 139,
+          "active": false,
+          "priceMonetaryFields": {
+            "displayString": "$1.39",
+            "unitAmount": 139,
+            "decimalPlaces": 0
+          },
+          "basePrice": 0,
+          "photoId": 2671306
+        }
+      ]
+    }
+  ]
+}
