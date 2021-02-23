@@ -1,21 +1,19 @@
 package com.androidnerds.doordash.presentation.storefeed;
 
-import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.databinding.StoreFeedFragmentBinding;
@@ -26,7 +24,6 @@ import com.androidnerds.doordash.presentation.storefeed.list.StoreItemDiffUtilCa
 import com.androidnerds.doordash.presentation.storefeed.list.adapter.StoresListAdapter;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
-import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModelFactory;
 
 public class StoreFeedFragment extends Fragment {
 
@@ -38,7 +35,7 @@ public class StoreFeedFragment extends Fragment {
         return new StoreFeedFragment();
     }
 
-    public StoreFeedFragment(){
+    public StoreFeedFragment() {
 
     }
 

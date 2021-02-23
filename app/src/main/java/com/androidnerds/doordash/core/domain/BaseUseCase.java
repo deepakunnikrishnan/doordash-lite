@@ -8,7 +8,7 @@ import io.reactivex.rxjava3.disposables.Disposable;
 
 public abstract class BaseUseCase<T> implements UseCase<T> {
 
-    private CompositeDisposable compositeDisposable  = new CompositeDisposable();
+    private final CompositeDisposable compositeDisposable  = new CompositeDisposable();
     protected MutableLiveData<T> liveData = new MutableLiveData<>();
 
     protected void track(Disposable disposable) {

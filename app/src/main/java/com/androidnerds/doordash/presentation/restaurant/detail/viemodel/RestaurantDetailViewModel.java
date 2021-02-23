@@ -1,10 +1,8 @@
 package com.androidnerds.doordash.presentation.restaurant.detail.viemodel;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.androidnerds.doordash.core.utils.Result;
 import com.androidnerds.doordash.domain.usecase.GetStoreDetailUseCase;

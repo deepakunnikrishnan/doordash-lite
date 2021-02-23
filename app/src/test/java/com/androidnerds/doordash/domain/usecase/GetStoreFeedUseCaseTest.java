@@ -94,9 +94,6 @@ public class GetStoreFeedUseCaseTest {
         StoreFeed storeFeed = new Gson().fromJson(content, StoreFeed.class);
         assertNotNull(storeFeed);
         //mocks
-        StoreFeedViewData storeFeedViewData = new StoreFeedViewData();
-        Mockito.when(mapper.map(Mockito.any(StoreFeed.class)))
-                .thenReturn(storeFeedViewData);
         Mockito.when(storeFeedRepository
                 .getStoreFeed(Mockito.any(Location.class), Mockito.anyInt(), Mockito.anyLong())
         ).thenReturn(Observable.error(new Exception()));

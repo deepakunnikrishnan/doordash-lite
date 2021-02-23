@@ -93,10 +93,8 @@ public class GetStoreDetailUseCaseTest {
         MenuDetail menuDetail = new Gson().fromJson(content, MenuDetail.class);
         assertNotNull(menuDetail);
 
-        StoreDetailViewData storeDetailViewData = new StoreDetailViewData();
-        Mockito.when(mapper.map(Mockito.any(StoreDetail.class))).thenReturn(storeDetailViewData);
         Mockito.when(storeRepository.getStore(10)).thenReturn(Single.just(new Store()));
-        Mockito.when(storeRepository.getMenuDetails(10)).thenReturn(Single.just(new MenuDetail()));
+        Mockito.when(storeRepository.getMenuDetails(10)).thenReturn(Single.error(new Exception()));
 
         //operation
         storeDetailUseCase.getLiveData().observeForever(observer);
@@ -104,7 +102,7 @@ public class GetStoreDetailUseCaseTest {
 
         //verify
         Mockito.verify(observer).onChanged(argumentCaptor.capture());
-        Assert.assertNotNull(argumentCaptor.getValue().getData());
-        Assert.assertNull(argumentCaptor.getValue().getError());
+        Assert.assertNull(argumentCaptor.getValue().getData());
+        Assert.assertNotNull(argumentCaptor.getValue().getError());
     }
 }
