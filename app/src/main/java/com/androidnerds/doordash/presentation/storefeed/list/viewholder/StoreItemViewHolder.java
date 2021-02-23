@@ -4,7 +4,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.androidnerds.doordash.databinding.ItemStoreBinding;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
-import com.bumptech.glide.Glide;
 
 public class StoreItemViewHolder extends RecyclerView.ViewHolder {
 
@@ -17,9 +16,6 @@ public class StoreItemViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(StoreItemViewData storeItemViewData) {
         binding.setStoreItem(storeItemViewData);
-        Glide.with(binding.getRoot().getContext())
-                .load(storeItemViewData.getImageUrl())
-                .centerCrop()
-                .into(binding.imageView);
+        binding.executePendingBindings();
     }
 }

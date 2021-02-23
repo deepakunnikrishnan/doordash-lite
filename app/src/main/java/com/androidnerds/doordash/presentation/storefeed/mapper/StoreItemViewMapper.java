@@ -46,9 +46,6 @@ public class StoreItemViewMapper implements Mapper<Store, StoreItemViewData> {
     private void setDeliveryFee(Store input, StoreItemViewData storeItemViewData) {
         StringBuilder deliveryFeeBuilder = new StringBuilder();
         MonetaryMetadata metadata = input.getDeliveryFeeMonetaryFields();
-        /*if("USD".equalsIgnoreCase(metadata.getCurrency())) {
-            deliveryFeeBuilder.append("$");
-        }*/
         if(input.getDeliveryFee() == 0) {
             deliveryFeeBuilder.append("Free");
         }else {

@@ -1,4 +1,4 @@
-package com.androidnerds.doordash.presentation.ui;
+package com.androidnerds.doordash.presentation.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
