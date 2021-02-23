@@ -15,6 +15,9 @@ import androidx.databinding.BindingAdapter;
 
 import com.androidnerds.doordash.R;
 
+/**
+ * UI component for the Deliver Info in the detail screen for the store.
+ */
 public class DeliveryInfoView extends ConstraintLayout {
 
     private TextView textViewDeliveryFee;

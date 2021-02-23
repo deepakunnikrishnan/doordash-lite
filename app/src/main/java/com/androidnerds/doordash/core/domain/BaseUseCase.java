@@ -6,6 +6,11 @@ import androidx.lifecycle.MutableLiveData;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;
 
+/**
+ * Base class for the UseCase implementation.
+ * The UseCase class outputs the result via the LiveData.
+ * @param <T>
+ */
 public abstract class BaseUseCase<T> implements UseCase<T> {
 
     private final CompositeDisposable compositeDisposable  = new CompositeDisposable();

@@ -10,6 +10,9 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import com.androidnerds.doordash.R;
 
+/**
+ * ImageView displays the image inside a circle.
+ */
 public class CircularImageView extends AppCompatImageView {
 
     public CircularImageView(@NonNull Context context) {

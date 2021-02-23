@@ -11,6 +11,11 @@ import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreFeedViewData;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 
+/**
+ * ViewModel class for the StoreList.
+ * Communicates with the domain layer of the app.
+ * Outputs the result via the {@link #StoreFeedViewModel(GetStoreFeedUseCase)#getStoreFeed()}
+ */
 public class StoreFeedViewModel extends ViewModel {
 
     private final double DEFAULT_LATITUDE = 37.422740;
@@ -40,10 +45,6 @@ public class StoreFeedViewModel extends ViewModel {
         if (result.getData() != null) {
             mediatorLiveData.setValue(result.getData());
         }
-    }
-
-    public void onStoreSelected(StoreItemViewData storeItemViewData) {
-
     }
 
     @Override

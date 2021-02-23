@@ -12,13 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DoorDash">
-        <activity android:name=".presentation.restaurant.detail.RestaurantDetailActivity"/>
-        <activity android:name=".presentation.home.HomeActivity">
+        <activity android:name=".presentation.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".presentation.restaurant.detail.RestaurantDetailActivity" />
+        <activity android:name=".presentation.home.HomeActivity">
+
         </activity>
     </application>
 

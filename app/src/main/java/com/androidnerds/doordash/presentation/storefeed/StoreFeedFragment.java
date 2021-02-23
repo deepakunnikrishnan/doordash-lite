@@ -25,6 +25,10 @@ import com.androidnerds.doordash.presentation.storefeed.list.adapter.StoresListA
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
 
+/**
+ * Displays the stores for a specific location as a list.
+ * Depends on the {@link StoreFeedViewModel} to provide with the data necessary for the screen.
+ */
 public class StoreFeedFragment extends Fragment {
 
     private StoreFeedViewModel mViewModel;
@@ -64,11 +68,17 @@ public class StoreFeedFragment extends Fragment {
         bindObserverForStores();
     }
 
+    /**
+     * The fragment subscribes to the viewModel for the data required in the screen.
+     */
     private void bindObserverForStores() {
         mViewModel.getStoreFeed()
                 .observe(getViewLifecycleOwner(), storeFeedViewData -> listAdapter.submitList(storeFeedViewData.getStores()));
     }
 
+    /**
+     * Initializing and binding the store list.
+     */
     private void setupStoreFeedList() {
         binding.recyclerViewStores.setLayoutManager(new LinearLayoutManager(requireActivity(), RecyclerView.VERTICAL, false));
         binding.recyclerViewStores.addItemDecoration(new DividerItemDecoration(requireActivity(), DividerItemDecoration.VERTICAL));

@@ -7,6 +7,9 @@ import androidx.databinding.BindingAdapter;
 
 import com.bumptech.glide.Glide;
 
+/**
+ * Utility class for the data binding.
+ */
 public class ImageDataBindingUtil {
 
     @BindingAdapter("imageUrl")

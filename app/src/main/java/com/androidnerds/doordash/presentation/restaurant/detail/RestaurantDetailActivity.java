@@ -8,24 +8,21 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.BindingAdapter;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.core.presentation.components.VerticalSpaceItemDecoration;
 import com.androidnerds.doordash.databinding.ActivityRestaurantDetailBinding;
 import com.androidnerds.doordash.di.PresentationModule;
 import com.androidnerds.doordash.presentation.restaurant.detail.menu.CategoryAdapter;
-import com.androidnerds.doordash.presentation.restaurant.detail.model.CategoryViewData;
 import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.RestaurantDetailViewModel;
-import com.google.android.material.tabs.TabLayout;
 
-import java.util.List;
-
+/**
+ * Activity displaying the Detail screen for the Restaurant.
+ * Depends on the {@link RestaurantDetailViewModel} for the data.
+ */
 public class RestaurantDetailActivity extends AppCompatActivity {
 
     private static final String EXTRA_STORE_ID = "storeId";
@@ -42,6 +39,13 @@ public class RestaurantDetailActivity extends AppCompatActivity {
     RestaurantDetailViewModel restaurantDetailViewModel;
     private CategoryAdapter categoryAdapter;
 
+    /**
+     * Intent for launching the Restaurant Detail screen.
+     *
+     * @param context
+     * @param id
+     * @return
+     */
     public static Intent getLaunchIntent(Context context, long id) {
         Intent intent = new Intent(context, RestaurantDetailActivity.class);
         intent.putExtra(EXTRA_STORE_ID, id);
@@ -59,6 +63,9 @@ public class RestaurantDetailActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Observing the livedata of the viewmodel for the data.
+     */
     private void observeForStoreDetails() {
         long storeId = getIntent().getLongExtra(EXTRA_STORE_ID, -1);
         restaurantDetailViewModel = PresentationModule.provideRestaurantDetailViewModelFactory(this, storeId)
@@ -140,16 +147,6 @@ public class RestaurantDetailActivity extends AppCompatActivity {
         alphaAnimation.setDuration(duration);
         alphaAnimation.setFillAfter(true);
         v.startAnimation(alphaAnimation);
-    }
-
-    @BindingAdapter("appTabs")
-    public static void addTabs(TabLayout tabLayout, List<CategoryViewData> categoryViewDataList) {
-        tabLayout.removeAllTabs();
-        if (null != categoryViewDataList && !categoryViewDataList.isEmpty()) {
-            for (CategoryViewData category : categoryViewDataList) {
-                tabLayout.addTab(tabLayout.newTab().setText(category.getTitle()));
-            }
-        }
     }
 
 }

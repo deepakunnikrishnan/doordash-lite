@@ -11,6 +11,10 @@ import com.androidnerds.doordash.core.rx.SchedulerProvider;
 
 import io.reactivex.rxjava3.disposables.Disposable;
 
+/**
+ * UseCase implementation for fetching the storeFeed from the data layer.
+ * Returns the result to the presentation layer via the liveData.
+ */
 public class GetStoreFeedUseCase extends BaseUseCase<Result<StoreFeedViewData, Throwable>> {
 
     private final IStoreFeedRepository storeFeedRepository;
