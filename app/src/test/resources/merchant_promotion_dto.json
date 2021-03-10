@@ -1,0 +1,19 @@
+{
+  "category_new_store_customers_only": false,
+  "minimum_subtotal_monetary_fields": {
+    "currency": "USD",
+    "display_string": "$0.00",
+    "decimal_places": 2,
+    "unit_amount": null
+  },
+  "daypart_constraints": [],
+  "delivery_fee": null,
+  "delivery_fee_monetary_fields": {
+    "currency": "USD",
+    "display_string": "$0.00",
+    "decimal_places": 2,
+    "unit_amount": null
+  },
+  "minimum_subtotal": null,
+  "id": 38900
+}

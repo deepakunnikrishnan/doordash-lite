@@ -1,0 +1,10 @@
+{
+  "unavailable_reason": null,
+  "pickup_available": true,
+  "asap_available": true,
+  "scheduled_available": false,
+  "asap_minutes_range": [
+    40,
+    40
+  ]
+}

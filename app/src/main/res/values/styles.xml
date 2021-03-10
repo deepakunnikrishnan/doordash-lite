@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <style name="title_text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="normal_text">
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+
+    <style name="list_title_text" parent="title_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="list_item_title_text" parent="title_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="list_item_sub_title_text" parent="normal_text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="list_sub_title_text" parent="normal_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="item_title_text" parent="title_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="item_sub_title_text" parent="normal_text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="toolbar_title_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+    <style name="toolbar_sub_title_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+    </style>
+
+    <style name="toolbar_alternate_title_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+</resources>

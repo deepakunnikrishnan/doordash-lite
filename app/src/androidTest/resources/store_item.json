@@ -1,0 +1,152 @@
+{
+  "averageRating": 0,
+  "businessId": 3289,
+  "consumerSubscriptionEligible": true,
+  "coverImageUrl": "https://cdn.doordash.com/media/restaurant/cover/The-Melt.png",
+  "deliveryFee": 0,
+  "deliveryFeeMonetaryFields": {
+    "_id": 0,
+    "currency": "USD",
+    "decimalPlaces": 2,
+    "displayString": "$0.00",
+    "unitAmount": 0
+  },
+  "description": "Burgers, Fast Food, Sandwiches, American, Vegetarian, Gluten-Free, Salads",
+  "distanceFromConsumer": 2.284567578106769,
+  "extraSOSDeliveryFee": 0,
+  "headerImageUrl": "https://cdn.doordash.com/media/store/carousel/The_Melt_Header.jpg",
+  "id": 62087,
+  "location": {
+    "latitude": 37.44309616088867,
+    "longitude": -122.17276763916016
+  },
+  "menuList": [
+    {
+      "catering": false,
+      "id": 1861624,
+      "name": "Doordash Retail",
+      "popularItems": [
+        {
+          "description": "Our Impossible plant-based patty loaded with melted cheddar, smoked bacon, crispy onions, Memphis-style bbq sauce on a toasted, artisan bun",
+          "id": 401283970,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/d666983b-9716-4690-8904-c3117e2c698b-retina-large.jpg",
+          "name": "Impossible BBQ Bacon",
+          "price": 1749
+        },
+        {
+          "description": "Our Impossible plant-based patty loaded with melted cheddar, smoked bacon, crispy onions, Memphis-style bbq sauce on a toasted, artisan bun",
+          "id": 400777946,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/ac274851-0696-4ce0-994e-52ecb8a2138e-retina-large.jpg",
+          "name": "Impossible BBQ Bacon",
+          "price": 1749
+        },
+        {
+          "description": "Our signature MeltBurger made with an Impossible™ plant-based patty that looks & tastes just like beef. Loaded with  melted swiss, fresh spinach, grilled mushrooms, crispy onions, aioli (grilled medium, pink &  juicy)",
+          "id": 400777923,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/71bbc85b-9158-42cf-8b81-19272c97f867-retina-large-jpeg",
+          "name": "Impossible Swiss&Shroom",
+          "price": 1599
+        },
+        {
+          "description": "Our signature MeltBurger made with an Impossible™ plant-based patty that looks & tastes just like beef. Loaded with melted pepper jack, sliced jalapeños, fresh avocado, lettuce, pickled onions, spicy ketchup (grilled medium, pink & juicy)",
+          "id": 400777948,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/d08ab468-0a18-4ab9-b7ef-d852f3e6409b-retina-large-jpeg",
+          "name": "Impossible Spicy Mission",
+          "price": 1599
+        },
+        {
+          "description": "Our signature MeltBurger made with an Impossible™ plant-based patty that looks & tastes just like beef. Loaded with melted cheddar, jalapeño-pickle mix (not too spicy, we promise) and Melt sauce on a toasted, artisan bun.",
+          "id": 400777937,
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/190f39c8-225e-442b-a9f3-b54804b8f9e7-retina-large-jpeg",
+          "name": "Impossible MeltBurger",
+          "price": 1499
+        }
+      ]
+    }
+  ],
+  "merchantPromotions": [
+    {
+      "categoryNewStoreCustomersOnly": false,
+      "deliveryFee": 0,
+      "deliveryFeeMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "displayString": "$0.00",
+        "unitAmount": 0
+      },
+      "id": 37641,
+      "minimumSubTotal": 1500,
+      "minimumSubTotalMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "displayString": "$15.00",
+        "unitAmount": 1500
+      }
+    },
+    {
+      "categoryNewStoreCustomersOnly": false,
+      "deliveryFee": 0,
+      "deliveryFeeMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "displayString": "$0.00",
+        "unitAmount": 0
+      },
+      "id": 38901,
+      "minimumSubTotal": 0,
+      "minimumSubTotalMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "displayString": "$0.00",
+        "unitAmount": 0
+      }
+    },
+    {
+      "categoryNewStoreCustomersOnly": false,
+      "deliveryFee": 0,
+      "deliveryFeeMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "displayString": "$0.00",
+        "unitAmount": 0
+      },
+      "id": 38900,
+      "minimumSubTotal": 0,
+      "minimumSubTotalMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "decimalPlaces": 2,
+        "displayString": "$0.00",
+        "unitAmount": 0
+      }
+    }
+  ],
+  "name": "The Melt",
+  "newlyAdded": false,
+  "nextCloseTime": "2021-02-23T07:45:00Z",
+  "nextOpenTime": "2021-02-22T18:08:49Z",
+  "numRatings": 0,
+  "priceRange": 1,
+  "sosDeliveryFeeMonetaryFields": {
+    "_id": 0,
+    "currency": "USD",
+    "decimalPlaces": 2,
+    "displayString": "$0.00",
+    "unitAmount": 0
+  },
+  "storeStatus": {
+    "asapAvailable": true,
+    "asapMinuteRange": [
+      28,
+      28
+    ],
+    "pickupAvailable": true,
+    "scheduledAvailable": false
+  },
+  "url": "/store/the-melt-palo-alto-62087/"
+}

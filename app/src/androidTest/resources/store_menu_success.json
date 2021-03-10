@@ -1,0 +1,345 @@
+[
+  {
+    "subtitle": "Lunch Menu",
+    "name": "McDonald's (16328-MT VIEW) POS 8/7/19-lunch",
+    "is_business_enabled": null,
+    "is_active": true,
+    "is_catering": false,
+    "merchant_supplied_id": "dda1a6f2-3947-47ac-9a03-f98fca62a1fd",
+    "id": 958743,
+    "categories": [
+      {
+        "subtitle": "",
+        "name": "Most Popular",
+        "title": "Most Popular",
+        "is_active": true,
+        "sort_id": 0,
+        "is_deactivated": false,
+        "merchant_supplied_id": "287",
+        "id": 21154548
+      },
+      {
+        "subtitle": "",
+        "name": "Combo Meals",
+        "title": "Combo Meals",
+        "is_active": true,
+        "sort_id": 1,
+        "is_deactivated": false,
+        "merchant_supplied_id": "59",
+        "id": 11196432
+      },
+      {
+        "subtitle": "",
+        "name": "Shareables",
+        "title": "Shareables",
+        "is_active": true,
+        "sort_id": 2,
+        "is_deactivated": false,
+        "merchant_supplied_id": "283",
+        "id": 22346561
+      },
+      {
+        "subtitle": "",
+        "name": "Happy Meal",
+        "title": "Happy Meal",
+        "is_active": true,
+        "sort_id": 3,
+        "is_deactivated": false,
+        "merchant_supplied_id": "112",
+        "id": 11198247
+      },
+      {
+        "subtitle": "",
+        "name": "McCafé",
+        "title": "McCafé",
+        "is_active": true,
+        "sort_id": 4,
+        "is_deactivated": false,
+        "merchant_supplied_id": "113",
+        "id": 11198273
+      },
+      {
+        "subtitle": "",
+        "name": "McCafé Bakery",
+        "title": "McCafé Bakery",
+        "is_active": true,
+        "sort_id": 5,
+        "is_deactivated": false,
+        "merchant_supplied_id": "256",
+        "id": 12366131
+      },
+      {
+        "subtitle": "",
+        "name": "Condiments",
+        "title": "Condiments",
+        "is_active": true,
+        "sort_id": 6,
+        "is_deactivated": false,
+        "merchant_supplied_id": "243",
+        "id": 18286542
+      },
+      {
+        "subtitle": "",
+        "name": "Fries, Sides & More",
+        "title": "Fries, Sides & More",
+        "is_active": true,
+        "sort_id": 7,
+        "is_deactivated": false,
+        "merchant_supplied_id": "124",
+        "id": 11198299
+      },
+      {
+        "subtitle": "",
+        "name": "Sweets & Treats",
+        "title": "Sweets & Treats",
+        "is_active": true,
+        "sort_id": 8,
+        "is_deactivated": false,
+        "merchant_supplied_id": "125",
+        "id": 11198332
+      },
+      {
+        "subtitle": "",
+        "name": "Beverages",
+        "title": "Beverages",
+        "is_active": true,
+        "sort_id": 9,
+        "is_deactivated": false,
+        "merchant_supplied_id": "132",
+        "id": 11198425
+      },
+      {
+        "subtitle": "",
+        "name": "Individual Items",
+        "title": "Individual Items",
+        "is_active": true,
+        "sort_id": 10,
+        "is_deactivated": false,
+        "merchant_supplied_id": "290",
+        "id": 22103035
+      }
+    ]
+  },
+  {
+    "subtitle": "Breakfast Menu",
+    "name": "McDonald's (16328-MT VIEW) POS 8/7/19-breakfast",
+    "is_business_enabled": null,
+    "is_active": true,
+    "is_catering": false,
+    "merchant_supplied_id": "6a00a5a1-bb8f-49c3-88aa-8439024b21ed",
+    "id": 958241,
+    "categories": [
+      {
+        "subtitle": "",
+        "name": "Most Popular",
+        "title": "Most Popular",
+        "is_active": true,
+        "sort_id": 0,
+        "is_deactivated": false,
+        "merchant_supplied_id": "286",
+        "id": 21154170
+      },
+      {
+        "subtitle": "",
+        "name": "Combo Meals",
+        "title": "Combo Meals",
+        "is_active": true,
+        "sort_id": 1,
+        "is_deactivated": false,
+        "merchant_supplied_id": "34",
+        "id": 11189858
+      },
+      {
+        "subtitle": "",
+        "name": "Homestyle Breakfasts",
+        "title": "Homestyle Breakfasts",
+        "is_active": true,
+        "sort_id": 2,
+        "is_deactivated": false,
+        "merchant_supplied_id": "39",
+        "id": 11190153
+      },
+      {
+        "subtitle": "",
+        "name": "McCafé",
+        "title": "McCafé",
+        "is_active": true,
+        "sort_id": 3,
+        "is_deactivated": false,
+        "merchant_supplied_id": "40",
+        "id": 11189630
+      },
+      {
+        "subtitle": "",
+        "name": "McCafé Bakery",
+        "title": "McCafé Bakery",
+        "is_active": true,
+        "sort_id": 4,
+        "is_deactivated": false,
+        "merchant_supplied_id": "250",
+        "id": 12482932
+      },
+      {
+        "subtitle": "",
+        "name": "Condiments",
+        "title": "Condiments",
+        "is_active": true,
+        "sort_id": 5,
+        "is_deactivated": false,
+        "merchant_supplied_id": "242",
+        "id": 18289119
+      },
+      {
+        "subtitle": "",
+        "name": "Snacks, Sides & More",
+        "title": "Snacks, Sides & More",
+        "is_active": true,
+        "sort_id": 6,
+        "is_deactivated": false,
+        "merchant_supplied_id": "52",
+        "id": 11190169
+      },
+      {
+        "subtitle": "",
+        "name": "Beverages",
+        "title": "Beverages",
+        "is_active": true,
+        "sort_id": 7,
+        "is_deactivated": false,
+        "merchant_supplied_id": "53",
+        "id": 11190218
+      },
+      {
+        "subtitle": "",
+        "name": "Individual Items",
+        "title": "Individual Items",
+        "is_active": true,
+        "sort_id": 8,
+        "is_deactivated": false,
+        "merchant_supplied_id": "289",
+        "id": 22103818
+      }
+    ]
+  },
+  {
+    "subtitle": "Dinner Menu",
+    "name": "McDonald's (16328-MT VIEW) POS 8/7/19-dinner",
+    "is_business_enabled": null,
+    "is_active": true,
+    "is_catering": false,
+    "merchant_supplied_id": "e0c955b6-c1dd-4798-85de-1201637d761a",
+    "id": 958263,
+    "categories": [
+      {
+        "subtitle": "",
+        "name": "Most Popular",
+        "title": "Most Popular",
+        "is_active": true,
+        "sort_id": 0,
+        "is_deactivated": false,
+        "merchant_supplied_id": "288",
+        "id": 21153340
+      },
+      {
+        "subtitle": "",
+        "name": "Combo Meals",
+        "title": "Combo Meals",
+        "is_active": true,
+        "sort_id": 1,
+        "is_deactivated": false,
+        "merchant_supplied_id": "139",
+        "id": 11191050
+      },
+      {
+        "subtitle": "",
+        "name": "Shareables",
+        "title": "Shareables",
+        "is_active": true,
+        "sort_id": 2,
+        "is_deactivated": false,
+        "merchant_supplied_id": "285",
+        "id": 21153339
+      },
+      {
+        "subtitle": "",
+        "name": "Sweets & Treats",
+        "title": "Sweets & Treats",
+        "is_active": true,
+        "sort_id": 3,
+        "is_deactivated": false,
+        "merchant_supplied_id": "149",
+        "id": 11192455
+      },
+      {
+        "subtitle": "",
+        "name": "Happy Meal",
+        "title": "Happy Meal",
+        "is_active": true,
+        "sort_id": 4,
+        "is_deactivated": false,
+        "merchant_supplied_id": "156",
+        "id": 11192765
+      },
+      {
+        "subtitle": "",
+        "name": "Condiments",
+        "title": "Condiments",
+        "is_active": true,
+        "sort_id": 5,
+        "is_deactivated": false,
+        "merchant_supplied_id": "244",
+        "id": 18288433
+      },
+      {
+        "subtitle": "",
+        "name": "Fries, Sides & More",
+        "title": "Fries, Sides & More",
+        "is_active": true,
+        "sort_id": 6,
+        "is_deactivated": false,
+        "merchant_supplied_id": "157",
+        "id": 11192878
+      },
+      {
+        "subtitle": "",
+        "name": "McCafé",
+        "title": "McCafé",
+        "is_active": true,
+        "sort_id": 7,
+        "is_deactivated": false,
+        "merchant_supplied_id": "158",
+        "id": 11191248
+      },
+      {
+        "subtitle": "",
+        "name": "McCafé Bakery",
+        "title": "McCafé Bakery",
+        "is_active": true,
+        "sort_id": 8,
+        "is_deactivated": false,
+        "merchant_supplied_id": "262",
+        "id": 12482966
+      },
+      {
+        "subtitle": "",
+        "name": "Beverages",
+        "title": "Beverages",
+        "is_active": true,
+        "sort_id": 9,
+        "is_deactivated": false,
+        "merchant_supplied_id": "170",
+        "id": 11192968
+      },
+      {
+        "subtitle": "",
+        "name": "Individual Items",
+        "title": "Individual Items",
+        "is_active": true,
+        "sort_id": 10,
+        "is_deactivated": false,
+        "merchant_supplied_id": "291",
+        "id": 22103093
+      }
+    ]
+  }
+]

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DoorDash</string>
+
+    <string name="text_total_ratings" formatted="false">%1s+ ratings</string>
+    <string name="text_delivery_fee" formatted="false">%1s delivery</string>
+    <string name="text_average_rating" formatted="false">%1s ★</string>
+    <string name="text_distance" formatted="false">%1s mi</string>
+    <string name="label_delivery_fee">delivery fee</string>
+    <string name="label_delivery_time">delivery time</string>
+    <string name="label_delivering_to">DELIVERING TO</string>
 </resources>

@@ -1,0 +1,167 @@
+{
+  "id": 662193,
+  "businessId": 5579,
+  "name": "McDonald's",
+  "description": "Fast Food, Burgers, Breakfast, Ice Cream, American (New), Dinner",
+  "coverImageUrl": "https://cdn.doordash.com/media/restaurant/cover/McD_GoldenArches_1235_RGB_1.jpg",
+  "headerImageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://cdn.doordash.com/media/store/header/5579.jpg",
+  "numRatings": 0,
+  "averageRating": 0,
+  "priceRange": 1,
+  "nextCloseTime": "2021-03-02T07:29:59Z",
+  "nextOpenTime": "2021-02-22T13:05:10Z",
+  "location": {
+    "latitude": 37.41936492919922,
+    "longitude": -122.09362030029297
+  },
+  "storeStatus": {
+    "pickupAvailable": false,
+    "asapAvailable": true,
+    "scheduledAvailable": false,
+    "asapMinuteRange": [
+      30,
+      30
+    ]
+  },
+  "url": "/store/mcdonald-s-mountain-view-662193/",
+  "menuList": [
+    {
+      "id": 958743,
+      "name": "McDonald's (16328-MT VIEW) POS 8/7/19-lunch",
+      "catering": false,
+      "popularItems": [
+        {
+          "id": 142777641,
+          "name": "Double Quarter Pounder with Cheese Meal",
+          "description": "(790 - 1350 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/f4d0eb4a-a804-4fc3-903b-4c45d7229dc6-retina-large.jpg",
+          "price": 1119
+        },
+        {
+          "id": 95926739,
+          "name": "4 Piece Chicken McNugget - Happy Meal",
+          "description": "(310 - 440 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/b4efe056-8f21-4bb4-a2f0-15a5272ab6a0-retina-large-jpeg",
+          "price": 499
+        },
+        {
+          "id": 141916087,
+          "name": "2 Cheeseburger Meal",
+          "description": "(620 - 1180 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/7015a61f-6179-4349-9087-82bb1d641a2b-retina-large-jpeg",
+          "price": 749
+        },
+        {
+          "id": 141916037,
+          "name": "10 Piece McNuggets Meal",
+          "description": "(460 - 1020 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/0a37a43f-4320-419a-a72c-1138e35a73b5-retina-large-jpeg",
+          "price": 979
+        },
+        {
+          "id": 95927692,
+          "name": "Oreo McFlurry",
+          "description": "(340 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/e7bb4627-110a-45f4-ba67-96e78a54959c-retina-large.jpg",
+          "price": 339
+        },
+        {
+          "id": 141916106,
+          "name": "Big Mac Meal",
+          "description": "(560 - 1120 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/79ffceed-52b7-45e1-9606-36cd173572ae-retina-large.jpg",
+          "price": 959
+        },
+        {
+          "id": 301147406,
+          "name": "20 Piece McNuggets",
+          "description": "(830 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/689f1ee9-cd1d-49ec-949e-4a673cb0b039-retina-large-jpeg",
+          "price": 579
+        },
+        {
+          "id": 141916115,
+          "name": "Quarter Pounder with Cheese Meal",
+          "description": "(840 - 1080 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/38b62d4e-5f8d-4a99-b25d-df576defb122-retina-large.jpg",
+          "price": 969
+        },
+        {
+          "id": 95926317,
+          "name": "Hamburger - Happy Meal",
+          "description": "(375 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/c2087cb3-2f6c-457e-af7c-58ccca4709f3-retina-large-jpeg",
+          "price": 489
+        },
+        {
+          "id": 301147379,
+          "name": "Big Mac Meal",
+          "description": "(560 - 1120 Cal.)",
+          "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photos/79ffceed-52b7-45e1-9606-36cd173572ae-retina-large.jpg",
+          "price": 959
+        }
+      ]
+    }
+  ],
+  "deliveryFee": 0,
+  "deliveryFeeMonetaryFields": {
+    "_id": 0,
+    "currency": "USD",
+    "displayString": "$0.00",
+    "unitAmount": 0,
+    "decimalPlaces": 2
+  },
+  "extraSOSDeliveryFee": 0,
+  "sosDeliveryFeeMonetaryFields": {
+    "_id": 0,
+    "currency": "USD",
+    "displayString": "$0.00",
+    "unitAmount": 0,
+    "decimalPlaces": 2
+  },
+  "newlyAdded": false,
+  "consumerSubscriptionEligible": true,
+  "distanceFromConsumer": 2.5531307644555277,
+  "merchantPromotions": [
+    {
+      "id": 38900,
+      "categoryNewStoreCustomersOnly": false,
+      "minimumSubTotalMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "displayString": "$0.00",
+        "unitAmount": 0,
+        "decimalPlaces": 2
+      },
+      "deliveryFee": 0,
+      "deliveryFeeMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "displayString": "$0.00",
+        "unitAmount": 0,
+        "decimalPlaces": 2
+      },
+      "minimumSubTotal": 0
+    },
+    {
+      "id": 264,
+      "categoryNewStoreCustomersOnly": false,
+      "minimumSubTotalMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "displayString": "$0.00",
+        "unitAmount": 0,
+        "decimalPlaces": 2
+      },
+      "deliveryFee": 0,
+      "deliveryFeeMonetaryFields": {
+        "_id": 0,
+        "currency": "USD",
+        "displayString": "$0.00",
+        "unitAmount": 0,
+        "decimalPlaces": 2
+      },
+      "minimumSubTotal": 0
+    }
+  ]
+}
