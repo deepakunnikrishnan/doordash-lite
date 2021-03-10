@@ -27,11 +27,19 @@ import com.androidnerds.doordash.domain.model.StoreFeed;
 import com.androidnerds.doordash.domain.model.menu.MenuDetail;
 import com.androidnerds.doordash.domain.model.store.Store;
 
+import dagger.Binds;
+import dagger.Module;
 
+@Module(includes = {
+        RemoteModule.class,
+        LocalModule.class
+})
 public abstract class DataModule {
 
+    @Binds
+    public abstract IStoreFeedRepository provideStoreFeedRepository(StoreFeedRepository storeFeedRepository);
 
-    public static IStoreFeedRepository provideStoreFeedRepository(IStoreFeedRemoteDataSource storeFeedRemoteDataSource,
+    /*public static IStoreFeedRepository provideStoreFeedRepository(IStoreFeedRemoteDataSource storeFeedRemoteDataSource,
                                                                   IStoreFeedLocalDataSource storeFeedLocalDataSource,
                                                                   IStoreLocalDataSource storeLocalDataSource,
                                                                   Mapper<StoreFeedDTO, StoreFeed> storeFeedDTOToDomainMapper,
@@ -44,9 +52,11 @@ public abstract class DataModule {
                 storeFeedDTOToDomainMapper,
                 dtoStoreEntityMapper,
                 schedulerProvider);
-    }
+    }*/
 
-    public static IStoreRepository provideStoreRepository(IStoreRemoteDataSource storeRemoteDataSource,
+    @Binds
+    public abstract IStoreRepository provideStoreRepository(StoreRepository storeRepository);
+    /*public static IStoreRepository provideStoreRepository(IStoreRemoteDataSource storeRemoteDataSource,
                                                           IStoreLocalDataSource storeLocalDataSource,
                                                           Mapper<StoreEntity, Store> storeEntityToDomainMapper,
                                                           Mapper<MenuDetailDTO, MenuDetail> menuDetailDTODomainMapper) {
@@ -56,32 +66,43 @@ public abstract class DataModule {
                 storeEntityToDomainMapper,
                 menuDetailDTODomainMapper
         );
-    }
+    }*/
 
-    public static IStoreRemoteDataSource provideStoreRemoteDataSource(StoreDetailService storeDetailService,
+    @Binds
+    public abstract IStoreRemoteDataSource provideStoreRemoteDataSource(StoreRemoteDataSource storeRemoteDataSource);
+
+    /*public static IStoreRemoteDataSource provideStoreRemoteDataSource(StoreDetailService storeDetailService,
                                                                       SchedulerProvider schedulerProvider) {
         return new StoreRemoteDataSource(
                 storeDetailService,
                 schedulerProvider
         );
-    }
+    }*/
 
-    public static IStoreLocalDataSource provideStoreLocalDataSource(StoreDao storeDao) {
+    @Binds
+    public abstract IStoreLocalDataSource provideStoreLocalDataSource(StoreLocalDataSource storeLocalDataSource);
+
+    /*public static IStoreLocalDataSource provideStoreLocalDataSource(StoreDao storeDao) {
         return new StoreLocalDataSource(
                 storeDao
         );
-    }
+    }*/
+    @Binds
+    public abstract IStoreFeedRemoteDataSource provideStoreFeedRemoteDataSource(StoreFeedRemoteDataSource storeFeedRemoteDataSource);
 
-    public static IStoreFeedRemoteDataSource provideStoreFeedRemoteDataSource(StoreFeedService storeFeedService,
+    /*public static IStoreFeedRemoteDataSource provideStoreFeedRemoteDataSource(StoreFeedService storeFeedService,
                                                                               SchedulerProvider schedulerProvider) {
         return new StoreFeedRemoteDataSource(storeFeedService, schedulerProvider);
-    }
+    }*/
 
-    public static IStoreFeedLocalDataSource provideStoreFeedLocalDataSource(StoreFeedDao storeFeedDao,
+    @Binds
+    public abstract IStoreFeedLocalDataSource provideStoreFeedLocalDataSource(StoreFeedLocalDataSource storeFeedLocalDataSource);
+
+    /*public static IStoreFeedLocalDataSource provideStoreFeedLocalDataSource(StoreFeedDao storeFeedDao,
                                                                             StoreDao storeDao,
                                                                             SchedulerProvider schedulerProvider) {
         return new StoreFeedLocalDataSource(storeFeedDao, storeDao, schedulerProvider);
-    }
+    }*/
 
 
 

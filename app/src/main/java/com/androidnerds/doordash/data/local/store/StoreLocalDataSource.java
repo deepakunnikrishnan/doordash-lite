@@ -5,12 +5,15 @@ import com.androidnerds.doordash.data.local.entity.StoreEntity;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Single;
 
 public class StoreLocalDataSource implements IStoreLocalDataSource {
 
     private final StoreDao storeDao;
 
+    @Inject
     public StoreLocalDataSource(StoreDao storeDao) {
         this.storeDao = storeDao;
     }

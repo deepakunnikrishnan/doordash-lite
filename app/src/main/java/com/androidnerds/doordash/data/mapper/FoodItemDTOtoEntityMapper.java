@@ -4,9 +4,12 @@ import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.data.local.entity.FoodItemEntity;
 import com.androidnerds.doordash.data.remote.model.FoodItemDTO;
 
+import javax.inject.Inject;
+
 
 public class FoodItemDTOtoEntityMapper implements Mapper<FoodItemDTO, FoodItemEntity> {
 
+    @Inject
     public FoodItemDTOtoEntityMapper() {
 
     }

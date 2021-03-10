@@ -9,15 +9,18 @@ import com.androidnerds.doordash.domain.IStoreRepository;
 import com.androidnerds.doordash.domain.model.menu.MenuDetail;
 import com.androidnerds.doordash.domain.model.store.Store;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Single;
 
 public class StoreRepository implements IStoreRepository {
 
-    private IStoreRemoteDataSource storeRemoteDataSource;
-    private IStoreLocalDataSource storeLocalDataSource;
-    private Mapper<StoreEntity, Store> storeEntityToDomainMapper;
-    private Mapper<MenuDetailDTO, MenuDetail> menuDetailDTODomainMapper;
+    private final IStoreRemoteDataSource storeRemoteDataSource;
+    private final IStoreLocalDataSource storeLocalDataSource;
+    private final Mapper<StoreEntity, Store> storeEntityToDomainMapper;
+    private final Mapper<MenuDetailDTO, MenuDetail> menuDetailDTODomainMapper;
 
+    @Inject
     public StoreRepository(
             IStoreRemoteDataSource storeRemoteDataSource,
             IStoreLocalDataSource storeLocalDataSource,

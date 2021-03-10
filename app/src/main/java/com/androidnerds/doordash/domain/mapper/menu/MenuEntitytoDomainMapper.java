@@ -9,10 +9,13 @@ import com.androidnerds.doordash.data.remote.model.menu.MenuDTO;
 import com.androidnerds.doordash.domain.model.FoodItem;
 import com.androidnerds.doordash.domain.model.Menu;
 
+import javax.inject.Inject;
+
 public class MenuEntitytoDomainMapper implements Mapper<MenuEntity, Menu> {
 
-    private ListMapper<FoodItemEntity, FoodItem> foodItemListMapper;
+    private final ListMapper<FoodItemEntity, FoodItem> foodItemListMapper;
 
+    @Inject
     public MenuEntitytoDomainMapper(ListMapper<FoodItemEntity, FoodItem> foodItemListMapper) {
         this.foodItemListMapper = foodItemListMapper;
     }

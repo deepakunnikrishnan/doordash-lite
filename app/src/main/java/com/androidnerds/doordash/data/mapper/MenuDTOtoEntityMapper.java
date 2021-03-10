@@ -7,11 +7,14 @@ import com.androidnerds.doordash.data.local.entity.MenuEntity;
 import com.androidnerds.doordash.data.remote.model.FoodItemDTO;
 import com.androidnerds.doordash.data.remote.model.menu.MenuDTO;
 
+import javax.inject.Inject;
+
 
 public class MenuDTOtoEntityMapper implements Mapper<MenuDTO, MenuEntity> {
 
-    private ListMapper<FoodItemDTO, FoodItemEntity> foodItemListMapper;
+    private final ListMapper<FoodItemDTO, FoodItemEntity> foodItemListMapper;
 
+    @Inject
     public MenuDTOtoEntityMapper(ListMapper<FoodItemDTO, FoodItemEntity> foodItemListMapper) {
         this.foodItemListMapper = foodItemListMapper;
     }

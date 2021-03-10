@@ -9,10 +9,13 @@ import com.androidnerds.doordash.presentation.restaurant.detail.model.CategoryVi
 
 import java.util.Comparator;
 
+import javax.inject.Inject;
+
 public class CategoryToViewMapper implements Mapper<Category, CategoryViewData> {
 
     private final ListMapper<CategoryItem, CategoryItemViewData> categoryItemViewDataListMapper;
 
+    @Inject
     public CategoryToViewMapper(ListMapper<CategoryItem, CategoryItemViewData> categoryItemViewDataListMapper) {
         this.categoryItemViewDataListMapper = categoryItemViewDataListMapper;
     }

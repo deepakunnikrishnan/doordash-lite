@@ -8,23 +8,21 @@ import com.androidnerds.doordash.core.rx.SchedulerProvider;
 import com.androidnerds.doordash.domain.usecase.GetStoreDetailUseCase;
 import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
 
+import javax.inject.Inject;
+
 public class RestaurantDetailViewModelFactory implements ViewModelProvider.Factory {
 
-    private long id;
-    private final GetStoreDetailUseCase getStoreDetailUseCase;
-    private SchedulerProvider schedulerProvider;
+    private final RestaurantDetailViewModel viewModel;
 
-    public RestaurantDetailViewModelFactory(long id, GetStoreDetailUseCase getStoreDetailUseCase, SchedulerProvider schedulerProvider) {
-        this.id = id;
-        this.getStoreDetailUseCase = getStoreDetailUseCase;
-        this.schedulerProvider = schedulerProvider;
+    public RestaurantDetailViewModelFactory(RestaurantDetailViewModel viewModel) {
+        this.viewModel = viewModel;
     }
 
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
         if(modelClass.isAssignableFrom(RestaurantDetailViewModel.class)) {
-            return (T) new RestaurantDetailViewModel(id, getStoreDetailUseCase);
+            return (T) viewModel;
         }
         throw new IllegalArgumentException("Unknown ViewModel class");
     }

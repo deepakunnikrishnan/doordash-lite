@@ -11,6 +11,8 @@ import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreFeedViewData;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 
+import javax.inject.Inject;
+
 /**
  * ViewModel class for the StoreList.
  * Communicates with the domain layer of the app.
@@ -26,6 +28,7 @@ public class StoreFeedViewModel extends ViewModel {
     private final MediatorLiveData<StoreFeedViewData> mediatorLiveData;
     private final GetStoreFeedUseCase getStoreFeedUseCase;
 
+    @Inject
     public StoreFeedViewModel(GetStoreFeedUseCase getStoreFeedUseCase) {
         this.getStoreFeedUseCase = getStoreFeedUseCase;
         mediatorLiveData = new MediatorLiveData<>();

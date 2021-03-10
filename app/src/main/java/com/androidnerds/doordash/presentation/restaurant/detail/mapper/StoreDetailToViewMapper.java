@@ -18,11 +18,14 @@ import com.androidnerds.doordash.presentation.utils.AppTextUtils;
 import java.util.Collections;
 import java.util.Comparator;
 
+import javax.inject.Inject;
+
 public class StoreDetailToViewMapper implements Mapper<StoreDetail, StoreDetailViewData> {
 
-    private Context context;
-    private ListMapper<Category, CategoryViewData> categoryItemViewDataListMapper;
+    private final Context context;
+    private final ListMapper<Category, CategoryViewData> categoryItemViewDataListMapper;
 
+    @Inject
     public StoreDetailToViewMapper(Context context, ListMapper<Category, CategoryViewData> categoryItemViewDataListMapper) {
         this.context = context;
         this.categoryItemViewDataListMapper = categoryItemViewDataListMapper;

@@ -18,8 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".presentation.restaurant.detail.RestaurantDetailActivity" />
-        <activity android:name=".presentation.home.HomeActivity">
+        <activity
+            android:name=".presentation.restaurant.detail.RestaurantDetailActivity"
+            android:theme="@style/Theme.DoorDash.NoActionBar" />
+        <activity
+            android:name=".presentation.home.HomeActivity"
+            android:theme="@style/Theme.DoorDash.NoActionBar">
 
         </activity>
     </application>

@@ -18,6 +18,7 @@ import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.ListMapperImpl;
 import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.domain.model.store.StoreDetail;
+import com.androidnerds.doordash.domain.usecase.GetStoreDetailUseCase;
 import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
 import com.androidnerds.doordash.presentation.restaurant.detail.mapper.CategoryItemToViewMapper;
 import com.androidnerds.doordash.presentation.restaurant.detail.mapper.CategoryToViewMapper;
@@ -33,21 +34,64 @@ import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModelFactory;
 
+import dagger.Binds;
+import dagger.Module;
+import dagger.Provides;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class PresentationModule {
+@Module(includes = {ViewModelModule.class})
+public abstract class PresentationModule {
 
 
+    /*@Provides
+    public static StoreFeedViewModelFactory provideStoreFeedViewModelFactory(GetStoreFeedUseCase storeFeedUseCase,
+                                                                             SchedulerProvider schedulerProvider) {
+        return new StoreFeedViewModelFactory(storeFeedUseCase, schedulerProvider);
+    }*/
 
-    public static StoreFeedViewModelFactory provideStoreFeedViewModelFactory(Context context) {
+    @Binds
+    public abstract Mapper<StoreFeed, StoreFeedViewData> provideStoreFeedMapper(StoreFeedToViewMapper mapper);
+
+    @Provides
+    public static ListMapper<Store, StoreItemViewData> provideStoreItemListMapper(Mapper<Store, StoreItemViewData> mapper) {
+        return new ListMapperImpl<>(mapper);
+    }
+    @Binds
+    public abstract Mapper<Store, StoreItemViewData> provideStoreItemMapper(StoreItemViewMapper mapper);
+
+    /*@Provides
+    public static RestaurantDetailViewModelFactory provideRestaurantDetailViewModelFactory(long id, GetStoreDetailUseCase getStoreDetailUseCase, SchedulerProvider schedulerProvider) {
+        return new RestaurantDetailViewModelFactory(id, getStoreDetailUseCase, schedulerProvider);
+    }*/
+
+    @Binds
+    public abstract Mapper<StoreDetail, StoreDetailViewData> provideStoreDetailMapper(StoreDetailToViewMapper mapper);
+
+    @Provides
+    public static ListMapper<Category, CategoryViewData> provideCategoryListMapper(Mapper<Category, CategoryViewData> mapper) {
+        return new ListMapperImpl<>(mapper);
+    }
+
+    @Binds
+    public abstract Mapper<Category, CategoryViewData> provideCategoryMapper(CategoryToViewMapper mapper);
+
+    @Provides
+    public static ListMapper<CategoryItem, CategoryItemViewData> provideCategoryItemListMapper(Mapper<CategoryItem, CategoryItemViewData> mapper) {
+        return new ListMapperImpl<>(mapper);
+    }
+
+    @Binds
+    public abstract Mapper<CategoryItem, CategoryItemViewData> provideCategoryItemMapper(CategoryItemToViewMapper mapper);
+
+    /*public static StoreFeedViewModelFactory provideStoreFeedViewModelFactory(Context context) {
         return new StoreFeedViewModelFactory(
                 UseCaseModule.provideGetStoreFeedUseCase(
                         DataModule.provideStoreFeedRepository(
                                 DataModule.provideStoreFeedRemoteDataSource(
                                         RemoteModule.provideStoreFeedService(
-                                                RemoteModule.provideRetrofit(RemoteConstants.API_BASE_URL,
+                                                RemoteModule.provideRetrofit(null,
                                                         RemoteModule.provideOkHttpClient(
                                                                 new HttpLoggingInterceptor()
                                                         ),
@@ -143,7 +187,7 @@ public class PresentationModule {
                         DataModule.provideStoreRepository(
                                 DataModule.provideStoreRemoteDataSource(
                                         RemoteModule.provideStoreDetailService(
-                                                RemoteModule.provideRetrofit(RemoteConstants.API_BASE_URL,
+                                                RemoteModule.provideRetrofit(null,
                                                         RemoteModule.provideOkHttpClient(
                                                                 new HttpLoggingInterceptor()
                                                         ),
@@ -225,7 +269,7 @@ public class PresentationModule {
 
     public static Mapper<CategoryItem, CategoryItemViewData> provideCategoryItemMapper() {
         return new CategoryItemToViewMapper();
-    }
+    }*/
 
 
 }

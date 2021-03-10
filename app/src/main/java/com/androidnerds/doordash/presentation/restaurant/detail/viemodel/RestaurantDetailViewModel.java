@@ -8,6 +8,8 @@ import com.androidnerds.doordash.core.utils.Result;
 import com.androidnerds.doordash.domain.usecase.GetStoreDetailUseCase;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.StoreDetailViewData;
 
+import javax.inject.Inject;
+
 /**
  * UseCase implementation for fetching the store info and the menu for the store.
  * Returns the result to the presentation layer via the liveData.
@@ -16,17 +18,15 @@ public class RestaurantDetailViewModel extends ViewModel {
 
     private final MediatorLiveData<StoreDetailViewData> mediatorLiveData;
     private final GetStoreDetailUseCase getStoreDetailUseCase;
-    private long id;
 
-    public RestaurantDetailViewModel(long id, GetStoreDetailUseCase getStoreDetailUseCase) {
-        this.id = id;
+    @Inject
+    public RestaurantDetailViewModel(GetStoreDetailUseCase getStoreDetailUseCase) {
         this.getStoreDetailUseCase = getStoreDetailUseCase;
         mediatorLiveData = new MediatorLiveData<>();
         mediatorLiveData.addSource(getStoreDetailUseCase.getLiveData(), this::onFetchStoreDetailResult);
-        fetchStoreDetails(id);
     }
 
-    private void fetchStoreDetails(long id) {
+    public void fetchStoreDetails(long id) {
         getStoreDetailUseCase.execute(id);
     }
 

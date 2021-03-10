@@ -13,18 +13,21 @@ import com.androidnerds.doordash.domain.IStoreFeedRepository;
 import com.androidnerds.doordash.domain.model.Location;
 import com.androidnerds.doordash.domain.model.StoreFeed;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Observable;
 
 
 public class StoreFeedRepository implements IStoreFeedRepository {
 
-    private IStoreFeedRemoteDataSource storeFeedRemoteDataSource;
-    private IStoreFeedLocalDataSource storeFeedLocalDataSource;
-    private IStoreLocalDataSource storeLocalDataSource;
-    Mapper<StoreFeedDTO, StoreFeed> storeFeedDTOToDomainMapper;
-    ListMapper<StoreDTO, StoreEntity> dtoStoreEntityMapper;
-    private SchedulerProvider schedulerProvider;
+    private final IStoreFeedRemoteDataSource storeFeedRemoteDataSource;
+    private final IStoreFeedLocalDataSource storeFeedLocalDataSource;
+    private final IStoreLocalDataSource storeLocalDataSource;
+    private final Mapper<StoreFeedDTO, StoreFeed> storeFeedDTOToDomainMapper;
+    private final ListMapper<StoreDTO, StoreEntity> dtoStoreEntityMapper;
+    private final SchedulerProvider schedulerProvider;
 
+    @Inject
     public StoreFeedRepository(IStoreFeedRemoteDataSource storeFeedRemoteDataSource,
                                IStoreFeedLocalDataSource storeFeedLocalDataSource,
                                IStoreLocalDataSource storeLocalDataSource,

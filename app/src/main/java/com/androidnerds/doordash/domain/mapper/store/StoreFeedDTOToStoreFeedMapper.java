@@ -7,10 +7,13 @@ import com.androidnerds.doordash.domain.model.StoreFeed;
 import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.Mapper;
 
+import javax.inject.Inject;
+
 public class StoreFeedDTOToStoreFeedMapper implements Mapper<StoreFeedDTO, StoreFeed> {
 
-    ListMapper<StoreDTO, Store> storeListMapper;
+    private final ListMapper<StoreDTO, Store> storeListMapper;
 
+    @Inject
     public StoreFeedDTOToStoreFeedMapper(ListMapper<StoreDTO, Store> storeListMapper) {
         this.storeListMapper = storeListMapper;
     }

@@ -6,11 +6,14 @@ import com.androidnerds.doordash.data.remote.model.category.CategoryItemDTO;
 import com.androidnerds.doordash.domain.model.MonetaryMetadata;
 import com.androidnerds.doordash.domain.model.category.CategoryItem;
 
+import javax.inject.Inject;
+
 
 public class CategoryItemDTOtoDomainMapper implements Mapper<CategoryItemDTO, CategoryItem> {
 
-    private Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper;
+    private final Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper;
 
+    @Inject
     public CategoryItemDTOtoDomainMapper(Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper) {
         this.monetaryMetadataMapper = monetaryMetadataMapper;
     }

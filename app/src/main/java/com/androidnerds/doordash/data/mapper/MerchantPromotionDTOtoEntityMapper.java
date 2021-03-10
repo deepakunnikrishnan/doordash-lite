@@ -6,11 +6,14 @@ import com.androidnerds.doordash.data.local.entity.MonetaryMetadataEntity;
 import com.androidnerds.doordash.data.remote.model.MerchantPromotionDTO;
 import com.androidnerds.doordash.data.remote.model.MonetaryMetadataDTO;
 
+import javax.inject.Inject;
+
 
 public class MerchantPromotionDTOtoEntityMapper implements Mapper<MerchantPromotionDTO, MerchantPromotionEntity> {
 
-    private Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> metadataMapper;
+    private final Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> metadataMapper;
 
+    @Inject
     public MerchantPromotionDTOtoEntityMapper(Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> metadataMapper) {
         this.metadataMapper = metadataMapper;
     }

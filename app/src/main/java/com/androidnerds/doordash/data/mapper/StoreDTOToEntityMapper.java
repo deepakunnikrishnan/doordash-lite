@@ -17,15 +17,18 @@ import com.androidnerds.doordash.data.remote.model.menu.MenuDTO;
 
 import java.util.ArrayList;
 
+import javax.inject.Inject;
+
 
 public class StoreDTOToEntityMapper implements Mapper<StoreDTO, StoreEntity> {
 
-    private Mapper<LocationDTO, LocationEntity> locationMapper;
-    private Mapper<StoreStatusDTO, StoreStatusEntity> storeStatusMapper;
-    private ListMapper<MenuDTO, MenuEntity> menuListMapper;
-    private Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> monetaryMetadataMapper;
-    private ListMapper<MerchantPromotionDTO, MerchantPromotionEntity> merchantPromotionListMapper;
+    private final Mapper<LocationDTO, LocationEntity> locationMapper;
+    private final Mapper<StoreStatusDTO, StoreStatusEntity> storeStatusMapper;
+    private final ListMapper<MenuDTO, MenuEntity> menuListMapper;
+    private final Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> monetaryMetadataMapper;
+    private final ListMapper<MerchantPromotionDTO, MerchantPromotionEntity> merchantPromotionListMapper;
 
+    @Inject
     public StoreDTOToEntityMapper(Mapper<LocationDTO, LocationEntity> locationMapper,
                                   Mapper<StoreStatusDTO, StoreStatusEntity> storeStatusMapper,
                                   ListMapper<MenuDTO, MenuEntity> menuListMapper,

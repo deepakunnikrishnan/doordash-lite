@@ -6,7 +6,14 @@ import com.androidnerds.doordash.domain.model.store.StoreDetail;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.CategoryItemViewData;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.StoreDetailViewData;
 
+import javax.inject.Inject;
+
 public class CategoryItemToViewMapper implements Mapper<CategoryItem, CategoryItemViewData> {
+
+    @Inject
+    public CategoryItemToViewMapper() {
+
+    }
 
     @Override
     public CategoryItemViewData map(CategoryItem input) {

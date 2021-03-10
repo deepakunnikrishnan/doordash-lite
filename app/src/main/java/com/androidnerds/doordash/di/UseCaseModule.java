@@ -13,7 +13,7 @@ import com.androidnerds.doordash.core.rx.SchedulerProvider;
 
 public class UseCaseModule {
 
-    public static GetStoreFeedUseCase provideGetStoreFeedUseCase(IStoreFeedRepository storeFeedRepository,
+    /*public static GetStoreFeedUseCase provideGetStoreFeedUseCase(IStoreFeedRepository storeFeedRepository,
                                                                  Mapper<StoreFeed, StoreFeedViewData> mapper,
                                                                  SchedulerProvider schedulerProvider) {
         return new GetStoreFeedUseCase(storeFeedRepository,
@@ -24,7 +24,7 @@ public class UseCaseModule {
                                                                      Mapper<StoreDetail, StoreDetailViewData> mapper,
                                                                      SchedulerProvider schedulerProvider) {
         return new GetStoreDetailUseCase(storeRepository, mapper, schedulerProvider);
-    }
+    }*/
 
 
 

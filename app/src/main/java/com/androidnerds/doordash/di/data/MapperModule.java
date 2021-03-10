@@ -58,178 +58,152 @@ import com.androidnerds.doordash.domain.model.category.CategoryItem;
 import com.androidnerds.doordash.domain.model.menu.MenuDetail;
 import com.androidnerds.doordash.domain.model.store.Store;
 
+import dagger.Binds;
+import dagger.Module;
+import dagger.Provides;
+
+@Module
 public abstract class MapperModule {
 
-    public static Mapper<StoreFeedDTO, StoreFeed> provideStoreFeedDTOtoStoreFeedMapper(ListMapper<StoreDTO, Store> storeListMapper) {
-        return new StoreFeedDTOToStoreFeedMapper(storeListMapper);
-    }
+    @Binds
+    public abstract Mapper<StoreFeedDTO, StoreFeed> provideStoreFeedDTOtoStoreFeedMapper(StoreFeedDTOToStoreFeedMapper mapper);
 
+    @Provides
     public static ListMapper<StoreDTO, Store> provideStoreDTOListToStoreListMapper(Mapper<StoreDTO, Store> storeMapper) {
         return new ListMapperImpl<>(storeMapper);
     }
 
+    @Binds
+    public abstract Mapper<StoreDTO, Store> provideStoreDTOToStoreMapper(StoreDTOToStoreMapper mapper);
 
-    public static Mapper<StoreDTO, Store> provideStoreDTOToStoreMapper(Mapper<LocationDTO, Location> locationMapper,
-                                                                       Mapper<StoreStatusDTO, StoreStatus> storeStatusMapper,
-                                                                       ListMapper<MenuDTO, Menu> menuListMapper,
-                                                                       Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper,
-                                                                       ListMapper<MerchantPromotionDTO, MerchantPromotion> merchantPromotionListMapper) {
-        return new StoreDTOToStoreMapper(locationMapper, storeStatusMapper, menuListMapper, monetaryMetadataMapper, merchantPromotionListMapper);
-    }
+    @Binds
+    public abstract Mapper<LocationDTO, Location> provideLocationDTOtoDomainMapper(LocationDTOtoDomainMapper mapper);
 
-    public static Mapper<LocationDTO, Location> provideLocationDTOtoDomainMapper() {
-        return new LocationDTOtoDomainMapper();
-    }
+    @Binds
+    public abstract Mapper<StoreStatusDTO, StoreStatus> provideStoreStatusDTOtoDomainMapper(StoreStatusDTOtoDomainMapper mapper);
 
-    public static Mapper<StoreStatusDTO, StoreStatus> provideStoreStatusDTOtoDomainMapper() {
-        return new StoreStatusDTOtoDomainMapper();
-    }
-
+    @Provides
     public static ListMapper<MenuDTO, Menu> provideMenuDTOListToDomainMapper(Mapper<MenuDTO, Menu> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<MenuDTO, Menu> provideMenuDTOToDomainMapper(ListMapper<FoodItemDTO, FoodItem> foodItemListMapper) {
-        return new MenuDTOtoDomainMapper(foodItemListMapper);
-    }
+    @Binds
+    public abstract Mapper<MenuDTO, Menu> provideMenuDTOToDomainMapper(MenuDTOtoDomainMapper mapper);
 
-
+    @Provides
     public static ListMapper<FoodItemDTO, FoodItem> provideFoodItemDTOListToDomainMapper(Mapper<FoodItemDTO, FoodItem> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<FoodItemDTO, FoodItem> provideFoodItemDTOToDomainMapper() {
-        return new FoodItemDTOtoDomainMapper();
-    }
+    @Binds
+    public abstract Mapper<FoodItemDTO, FoodItem> provideFoodItemDTOToDomainMapper(FoodItemDTOtoDomainMapper mapper);
 
+    @Provides
     public static ListMapper<MerchantPromotionDTO, MerchantPromotion> provideMerchantPromotionDTOListToDomainMapper(Mapper<MerchantPromotionDTO, MerchantPromotion> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<MerchantPromotionDTO, MerchantPromotion> provideMerchantPromotionDTOToDomainMapper(Mapper<MonetaryMetadataDTO, MonetaryMetadata> metadataMapper) {
-        return new MerchantPromotionDTOtoDomainMapper(metadataMapper);
-    }
+    @Binds
+    public abstract Mapper<MerchantPromotionDTO, MerchantPromotion> provideMerchantPromotionDTOToDomainMapper(MerchantPromotionDTOtoDomainMapper mapper);
 
-    public static Mapper<MonetaryMetadataDTO, MonetaryMetadata> provideMonetaryMetadataDTOtoDomainMapper() {
-        return new MonetaryMetadataDTOtoDomainMapper();
-    }
+    @Binds
+    public abstract Mapper<MonetaryMetadataDTO, MonetaryMetadata> provideMonetaryMetadataDTOtoDomainMapper(MonetaryMetadataDTOtoDomainMapper mapper);
 
+    @Binds
+    public abstract Mapper<StoreEntity, Store> provideStoreEntityToStoreMapper(StoreEntityToStoreMapper mapper);
 
-    public static Mapper<StoreEntity, Store> provideStoreEntityToStoreMapper(Mapper<LocationEntity, Location> locationMapper,
-                                                                             Mapper<StoreStatusEntity, StoreStatus> storeStatusMapper,
-                                                                             ListMapper<MenuEntity, Menu> menuListMapper,
-                                                                             Mapper<MonetaryMetadataEntity, MonetaryMetadata> monetaryMetadataMapper,
-                                                                             ListMapper<MerchantPromotionEntity, MerchantPromotion> merchantPromotionListMapper) {
-        return new StoreEntityToStoreMapper(locationMapper, storeStatusMapper, menuListMapper, monetaryMetadataMapper, merchantPromotionListMapper);
-    }
+    @Binds
+    public abstract Mapper<LocationEntity, Location> provideLocationEntitytoDomainMapper(LocationEntitytoDomainMapper mapper);
 
-    public static Mapper<LocationEntity, Location> provideLocationEntitytoDomainMapper() {
-        return new LocationEntitytoDomainMapper();
-    }
+    @Binds
+    public abstract Mapper<StoreStatusEntity, StoreStatus> provideStoreStatusEntitytoDomainMapper(StoreStatusEntitytoDomainMapper mapper);
 
-    public static Mapper<StoreStatusEntity, StoreStatus> provideStoreStatusEntitytoDomainMapper() {
-        return new StoreStatusEntitytoDomainMapper();
-    }
-
+    @Provides
     public static ListMapper<MenuEntity, Menu> provideMenuEntityListToDomainMapper(Mapper<MenuEntity, Menu> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<MenuEntity, Menu> provideMenuEntityToDomainMapper(ListMapper<FoodItemEntity, FoodItem> foodItemListMapper) {
-        return new MenuEntitytoDomainMapper(foodItemListMapper);
-    }
+    @Binds
+    public abstract Mapper<MenuEntity, Menu> provideMenuEntityToDomainMapper(MenuEntitytoDomainMapper mapper);
 
-
+    @Provides
     public static ListMapper<FoodItemEntity, FoodItem> provideFoodItemEntityListToDomainMapper(Mapper<FoodItemEntity, FoodItem> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
+    @Binds
+    public abstract Mapper<FoodItemEntity, FoodItem> provideFoodItemEntityToDomainMapper(FoodItemEntitytoDomainMapper mapper);
 
-    public static Mapper<FoodItemEntity, FoodItem> provideFoodItemEntityToDomainMapper() {
-        return new FoodItemEntitytoDomainMapper();
-    }
-
+    @Provides
     public static ListMapper<MerchantPromotionEntity, MerchantPromotion> provideMerchantPromotionEntityListToDomainMapper(Mapper<MerchantPromotionEntity, MerchantPromotion> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
+    @Binds
+    public abstract Mapper<MerchantPromotionEntity, MerchantPromotion> provideMerchantPromotionEntityToDomainMapper(MerchantPromotionEntitytoDomainMapper mapper);
 
-    public static Mapper<MerchantPromotionEntity, MerchantPromotion> provideMerchantPromotionEntityToDomainMapper(Mapper<MonetaryMetadataEntity, MonetaryMetadata> metadataMapper) {
-        return new MerchantPromotionEntitytoDomainMapper(metadataMapper);
-    }
+    @Binds
+    public abstract Mapper<MonetaryMetadataEntity, MonetaryMetadata> provideMonetaryMetadataEntityToDomainMapper(MonetaryMetadataEntitytoDomainMapper mapper);
 
-    public static Mapper<MonetaryMetadataEntity, MonetaryMetadata> provideMonetaryMetadataEntityToDomainMapper() {
-        return new MonetaryMetadataEntitytoDomainMapper();
-    }
+    @Binds
+    public abstract Mapper<MenuDetailDTO, MenuDetail> provideMenuDetailDTOtoDomainMapper(MenuDetailDTOtoDomainMapper mapper);
 
-    public static Mapper<MenuDetailDTO, MenuDetail> provideMenuDetailDTOtoDomainMapper(ListMapper<CategoryDTO, Category> categoryListMapper) {
-        return new MenuDetailDTOtoDomainMapper(categoryListMapper);
-    }
-
+    @Provides
     public static ListMapper<CategoryDTO, Category> provideCategoryDTOListToDomainMapper(Mapper<CategoryDTO, Category> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<CategoryDTO, Category> provideCategoryDTOtoDomainMapper(ListMapper<CategoryItemDTO, CategoryItem> categoryItemListMapper) {
-        return new CategoryDTOtoDomainMapper(categoryItemListMapper);
-    }
+    @Binds
+    public abstract Mapper<CategoryDTO, Category> provideCategoryDTOtoDomainMapper(CategoryDTOtoDomainMapper mapper);
 
+    @Provides
     public static ListMapper<CategoryItemDTO, CategoryItem> provideCategoryItemDTOListToDomainMapper(Mapper<CategoryItemDTO, CategoryItem> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<CategoryItemDTO, CategoryItem> provideCategoryItemDTOtoDomainMapper(Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper) {
-        return new CategoryItemDTOtoDomainMapper(monetaryMetadataMapper);
-    }
+    @Binds
+    public abstract Mapper<CategoryItemDTO, CategoryItem> provideCategoryItemDTOtoDomainMapper(CategoryItemDTOtoDomainMapper mapper);
 
+    @Provides
     public static ListMapper<StoreDTO, StoreEntity> provideStoreDTOListToStoreEntityListMapper(Mapper<StoreDTO, StoreEntity> storeMapper) {
         return new ListMapperImpl<>(storeMapper);
     }
 
-    public static Mapper<StoreDTO, StoreEntity> provideStoreDTOToStoreEntityMapper(Mapper<LocationDTO, LocationEntity> locationMapper,
-                                                                                   Mapper<StoreStatusDTO, StoreStatusEntity> storeStatusMapper,
-                                                                                   ListMapper<MenuDTO, MenuEntity> menuListMapper,
-                                                                                   Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> monetaryMetadataMapper,
-                                                                                   ListMapper<MerchantPromotionDTO, MerchantPromotionEntity> merchantPromotionListMapper) {
-        return new StoreDTOToEntityMapper(locationMapper, storeStatusMapper, menuListMapper, monetaryMetadataMapper, merchantPromotionListMapper);
-    }
+    @Binds
+    public abstract Mapper<StoreDTO, StoreEntity> provideStoreDTOToStoreEntityMapper(StoreDTOToEntityMapper mapper);
 
-    public static Mapper<LocationDTO, LocationEntity> provideLocationDTOtoEntityMapper() {
-        return new LocationDTOtoEntityMapper();
-    }
+    @Binds
+    public abstract Mapper<LocationDTO, LocationEntity> provideLocationDTOtoEntityMapper(LocationDTOtoEntityMapper mapper);
 
-    public static Mapper<StoreStatusDTO, StoreStatusEntity> provideStoreStatusDTOtoEntityMapper() {
-        return new StoreStatusDTOtoEntityMapper();
-    }
+    @Binds
+    public abstract Mapper<StoreStatusDTO, StoreStatusEntity> provideStoreStatusDTOtoEntityMapper(StoreStatusDTOtoEntityMapper mapper);
 
+    @Provides
     public static ListMapper<MenuDTO, MenuEntity> provideMenuDTOListToEntityMapper(Mapper<MenuDTO, MenuEntity> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<MenuDTO, MenuEntity> provideMenuDTOToEntityMapper(ListMapper<FoodItemDTO, FoodItemEntity> foodItemListMapper) {
-        return new MenuDTOtoEntityMapper(foodItemListMapper);
-    }
+    @Binds
+    public abstract Mapper<MenuDTO, MenuEntity> provideMenuDTOToEntityMapper(MenuDTOtoEntityMapper mapper);
 
+    @Provides
     public static ListMapper<FoodItemDTO, FoodItemEntity> provideFoodItemDTOListToEntityMapper(Mapper<FoodItemDTO, FoodItemEntity> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
-    public static Mapper<FoodItemDTO, FoodItemEntity> provideFoodItemDTOToEntityMapper() {
-        return new FoodItemDTOtoEntityMapper();
-    }
+    @Binds
+    public abstract Mapper<FoodItemDTO, FoodItemEntity> provideFoodItemDTOToEntityMapper(FoodItemDTOtoEntityMapper mapper);
 
+    @Provides
     public static ListMapper<MerchantPromotionDTO, MerchantPromotionEntity> provideMerchantPromotionDTOListToEntityMapper(Mapper<MerchantPromotionDTO, MerchantPromotionEntity> mapper) {
         return new ListMapperImpl<>(mapper);
     }
 
+    @Binds
+    public abstract Mapper<MerchantPromotionDTO, MerchantPromotionEntity> provideMerchantPromotionDTOToEntityMapper(MerchantPromotionDTOtoEntityMapper mapper);
 
-    public static Mapper<MerchantPromotionDTO, MerchantPromotionEntity> provideMerchantPromotionDTOToEntityMapper(Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> metadataMapper) {
-        return new MerchantPromotionDTOtoEntityMapper(metadataMapper);
-    }
-
-    public static Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> provideMonetaryMetadataDTOtoEntityMapper() {
-        return new MonetaryMetadataDTOtoEntityMapper();
-    }
+    @Binds
+    public abstract Mapper<MonetaryMetadataDTO, MonetaryMetadataEntity> provideMonetaryMetadataDTOtoEntityMapper(MonetaryMetadataDTOtoEntityMapper mapper);
 
 
 }

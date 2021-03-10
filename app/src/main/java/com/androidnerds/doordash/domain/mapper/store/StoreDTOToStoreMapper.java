@@ -15,15 +15,18 @@ import com.androidnerds.doordash.domain.model.StoreStatus;
 import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.Mapper;
 
+import javax.inject.Inject;
+
 
 public class StoreDTOToStoreMapper implements Mapper<StoreDTO, Store> {
 
-    private Mapper<LocationDTO, Location> locationMapper;
-    private Mapper<StoreStatusDTO, StoreStatus> storeStatusMapper;
-    private ListMapper<MenuDTO, Menu> menuListMapper;
-    private Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper;
-    private ListMapper<MerchantPromotionDTO, MerchantPromotion> merchantPromotionListMapper;
+    private final Mapper<LocationDTO, Location> locationMapper;
+    private final Mapper<StoreStatusDTO, StoreStatus> storeStatusMapper;
+    private final ListMapper<MenuDTO, Menu> menuListMapper;
+    private final Mapper<MonetaryMetadataDTO, MonetaryMetadata> monetaryMetadataMapper;
+    private final ListMapper<MerchantPromotionDTO, MerchantPromotion> merchantPromotionListMapper;
 
+    @Inject
     public StoreDTOToStoreMapper(Mapper<LocationDTO, Location> locationMapper,
                                  Mapper<StoreStatusDTO, StoreStatus> storeStatusMapper,
                                  ListMapper<MenuDTO, Menu> menuListMapper,

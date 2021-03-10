@@ -5,15 +5,18 @@ import com.androidnerds.doordash.data.local.dao.StoreFeedDao;
 import com.androidnerds.doordash.data.local.entity.StoreFeedEntity;
 import com.androidnerds.doordash.core.rx.SchedulerProvider;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Maybe;
 import io.reactivex.rxjava3.core.Single;
 
 public class StoreFeedLocalDataSource implements IStoreFeedLocalDataSource {
 
-    private StoreFeedDao storeFeedDao;
-    private StoreDao storeDao;
-    private SchedulerProvider schedulerProvider;
+    private final StoreFeedDao storeFeedDao;
+    private final StoreDao storeDao;
+    private final SchedulerProvider schedulerProvider;
 
+    @Inject
     public StoreFeedLocalDataSource(StoreFeedDao storeFeedDao,
                                     StoreDao storeDao,
                                     SchedulerProvider schedulerProvider) {

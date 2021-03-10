@@ -6,13 +6,16 @@ import com.androidnerds.doordash.data.remote.service.StoreDetailService;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Single;
 
 public class StoreRemoteDataSource implements IStoreRemoteDataSource {
 
-    private StoreDetailService storeDetailService;
-    private SchedulerProvider schedulerProvider;
+    private final StoreDetailService storeDetailService;
+    private final SchedulerProvider schedulerProvider;
 
+    @Inject
     public StoreRemoteDataSource(StoreDetailService storeDetailService, SchedulerProvider schedulerProvider) {
         this.storeDetailService = storeDetailService;
         this.schedulerProvider = schedulerProvider;

@@ -7,11 +7,14 @@ import com.androidnerds.doordash.domain.model.Menu;
 import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.Mapper;
 
+import javax.inject.Inject;
+
 
 public class MenuDTOtoDomainMapper implements Mapper<MenuDTO, Menu> {
 
-    private ListMapper<FoodItemDTO, FoodItem> foodItemListMapper;
+    private final ListMapper<FoodItemDTO, FoodItem> foodItemListMapper;
 
+    @Inject
     public MenuDTOtoDomainMapper(ListMapper<FoodItemDTO, FoodItem> foodItemListMapper) {
         this.foodItemListMapper = foodItemListMapper;
     }

@@ -9,6 +9,8 @@ import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreFeedViewData;
 import com.androidnerds.doordash.core.rx.SchedulerProvider;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.disposables.Disposable;
 
 /**
@@ -21,6 +23,7 @@ public class GetStoreFeedUseCase extends BaseUseCase<Result<StoreFeedViewData, T
     private final SchedulerProvider schedulerProvider;
     private final Mapper<StoreFeed, StoreFeedViewData> mapper;
 
+    @Inject
     public GetStoreFeedUseCase(IStoreFeedRepository storeFeedRepository,
                                Mapper<StoreFeed, StoreFeedViewData> mapper,
                                SchedulerProvider schedulerProvider) {
