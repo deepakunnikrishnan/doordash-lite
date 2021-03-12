@@ -116,7 +116,7 @@ public abstract class RemoteModule {
 
     @Provides
     public static HttpLoggingInterceptor provideHttpLoggingInterceptor() {
-        return new HttpLoggingInterceptor();
+        return new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY);
     }
 
     @Singleton

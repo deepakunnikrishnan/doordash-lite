@@ -14,7 +14,7 @@ public class DoorDashApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        DaggerAppComponent.factory().create(this);
+        appComponent = DaggerAppComponent.factory().create(this);
     }
 
     public AppComponent getAppComponent() {
