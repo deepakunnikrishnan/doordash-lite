@@ -15,11 +15,11 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.databinding.StoreFeedFragmentBinding;
 import com.androidnerds.doordash.di.AppModule;
 import com.androidnerds.doordash.di.DaggerAppComponent;
-import com.androidnerds.doordash.di.PresentationModule;
 import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.RestaurantDetailActivity;
 import com.androidnerds.doordash.presentation.storefeed.list.ItemClickListener;
@@ -27,7 +27,6 @@ import com.androidnerds.doordash.presentation.storefeed.list.StoreItemDiffUtilCa
 import com.androidnerds.doordash.presentation.storefeed.list.adapter.StoresListAdapter;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
-import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModelFactory;
 
 import javax.inject.Inject;
 
@@ -54,11 +53,8 @@ public class StoreFeedFragment extends Fragment {
 
     @Override
     public void onAttach(@NonNull Context context) {
-        DaggerAppComponent.builder()
-                .appModule(new AppModule(context))
-                .build()
-                .inject(this);
         super.onAttach(context);
+        ((DoorDashApplication)requireActivity().getApplication()).getAppComponent().inject(this);
     }
 
     @Override

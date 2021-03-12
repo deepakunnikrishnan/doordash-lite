@@ -2,13 +2,13 @@ package com.androidnerds.doordash.di;
 
 import android.content.Context;
 
-import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.presentation.home.HomeActivity;
 import com.androidnerds.doordash.presentation.restaurant.detail.RestaurantDetailActivity;
 import com.androidnerds.doordash.presentation.storefeed.StoreFeedFragment;
 
 import javax.inject.Singleton;
 
+import dagger.BindsInstance;
 import dagger.Component;
 
 @Singleton
@@ -16,8 +16,12 @@ import dagger.Component;
         AppModule.class
 })
 public interface AppComponent {
-    Context context();
-    void inject(DoorDashApplication application);
+
+    @Component.Factory
+    interface Factory {
+        AppComponent create(@BindsInstance Context context);
+    }
+
     void inject(HomeActivity activity);
     void inject(RestaurantDetailActivity activity);
     void inject(StoreFeedFragment feedFragment);

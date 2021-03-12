@@ -1,7 +1,7 @@
 package com.androidnerds.doordash.domain.mapper.store;
 
 import com.androidnerds.doordash.data.remote.model.StoreFeedDTO;
-import com.androidnerds.doordash.di.data.MapperModule;
+import com.androidnerds.doordash.di.MapperModule;
 import com.androidnerds.doordash.domain.model.StoreFeed;
 import com.androidnerds.doordash.testconstant.ApiConstants;
 import com.androidnerds.doordash.testutils.JsonUtils;

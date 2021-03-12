@@ -1,7 +1,7 @@
 package com.androidnerds.doordash.domain.mapper.category;
 
 import com.androidnerds.doordash.data.remote.model.category.CategoryItemDTO;
-import com.androidnerds.doordash.di.data.MapperModule;
+import com.androidnerds.doordash.di.MapperModule;
 import com.androidnerds.doordash.domain.model.category.CategoryItem;
 import com.androidnerds.doordash.testconstant.ApiConstants;
 import com.androidnerds.doordash.testutils.MockResponseFileReader;

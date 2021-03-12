@@ -1,14 +1,9 @@
 package com.androidnerds.doordash.domain.mapper.store;
 
-import com.androidnerds.doordash.data.remote.model.MerchantPromotionDTO;
 import com.androidnerds.doordash.data.remote.model.StoreDTO;
-import com.androidnerds.doordash.di.data.MapperModule;
-import com.androidnerds.doordash.domain.mapper.promotion.MerchantPromotionDTOtoDomainMapper;
-import com.androidnerds.doordash.domain.mapper.store.StoreDTOToStoreMapper;
-import com.androidnerds.doordash.domain.model.MerchantPromotion;
+import com.androidnerds.doordash.di.MapperModule;
 import com.androidnerds.doordash.domain.model.store.Store;
 import com.androidnerds.doordash.testconstant.ApiConstants;
-import com.androidnerds.doordash.testutils.JsonUtils;
 import com.androidnerds.doordash.testutils.MockResponseFileReader;
 import com.google.gson.Gson;
 

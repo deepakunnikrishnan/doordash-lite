@@ -1,4 +1,4 @@
-package com.androidnerds.doordash.di;
+package com.androidnerds.doordash.di.presentation;
 
 
 import androidx.lifecycle.ViewModel;
@@ -27,25 +27,6 @@ import dagger.multibindings.IntoMap;
 
 @Module
 public abstract class ViewModelModule {
-
-    /*@Target(ElementType.METHOD)
-    @Retention(RetentionPolicy.RUNTIME)
-    @MapKey
-    @interface ViewModelKey {
-        Class<? extends ViewModel> value();
-    }
-
-    @Provides
-    RestaurantDetailViewModelFactory viewModelFactory(Map<Class<? extends ViewModel>, Provider<ViewModel>> providerMap) {
-        return new RestaurantDetailViewModelFactory(providerMap);
-    }
-
-    @Provides
-    @IntoMap
-    @ViewModelKey(RestaurantDetailViewModel.class)
-    RestaurantDetailViewModel restaurantDetailViewModel(long id, GetStoreDetailUseCase getStoreDetailUseCase) {
-        return new RestaurantDetailViewModel(id, getStoreDetailUseCase);
-    }*/
 
     @Binds
     abstract ViewModelProvider.Factory bindViewModelFactory(ViewModelFactory factory);

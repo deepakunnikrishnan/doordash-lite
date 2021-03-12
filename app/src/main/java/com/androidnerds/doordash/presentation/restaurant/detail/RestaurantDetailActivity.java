@@ -13,16 +13,15 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.core.presentation.components.VerticalSpaceItemDecoration;
 import com.androidnerds.doordash.databinding.ActivityRestaurantDetailBinding;
 import com.androidnerds.doordash.di.AppModule;
 import com.androidnerds.doordash.di.DaggerAppComponent;
-import com.androidnerds.doordash.di.PresentationModule;
 import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.menu.CategoryAdapter;
 import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.RestaurantDetailViewModel;
-import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.RestaurantDetailViewModelFactory;
 
 import javax.inject.Inject;
 
@@ -63,10 +62,7 @@ public class RestaurantDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        DaggerAppComponent.builder()
-                .appModule(new AppModule(this))
-                .build()
-                .inject(this);
+        ((DoorDashApplication)getApplication()).getAppComponent().inject(this);
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_restaurant_detail);
         setupActionBar();

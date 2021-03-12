@@ -1,15 +1,5 @@
-package com.androidnerds.doordash.di;
+package com.androidnerds.doordash.di.presentation;
 
-import android.content.Context;
-
-import androidx.lifecycle.ViewModel;
-
-import com.androidnerds.doordash.core.rx.SchedulerProvider;
-import com.androidnerds.doordash.data.remote.constant.RemoteConstants;
-import com.androidnerds.doordash.di.data.DataModule;
-import com.androidnerds.doordash.di.data.LocalModule;
-import com.androidnerds.doordash.di.data.MapperModule;
-import com.androidnerds.doordash.di.data.RemoteModule;
 import com.androidnerds.doordash.domain.model.category.Category;
 import com.androidnerds.doordash.domain.model.category.CategoryItem;
 import com.androidnerds.doordash.domain.model.store.Store;
@@ -18,28 +8,20 @@ import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.ListMapperImpl;
 import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.domain.model.store.StoreDetail;
-import com.androidnerds.doordash.domain.usecase.GetStoreDetailUseCase;
-import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
 import com.androidnerds.doordash.presentation.restaurant.detail.mapper.CategoryItemToViewMapper;
 import com.androidnerds.doordash.presentation.restaurant.detail.mapper.CategoryToViewMapper;
 import com.androidnerds.doordash.presentation.restaurant.detail.mapper.StoreDetailToViewMapper;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.CategoryItemViewData;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.CategoryViewData;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.StoreDetailViewData;
-import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.RestaurantDetailViewModelFactory;
 import com.androidnerds.doordash.presentation.storefeed.mapper.StoreFeedToViewMapper;
 import com.androidnerds.doordash.presentation.storefeed.mapper.StoreItemViewMapper;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreFeedViewData;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
-import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
-import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModelFactory;
 
 import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
-import okhttp3.logging.HttpLoggingInterceptor;
-import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module(includes = {ViewModelModule.class})
 public abstract class PresentationModule {

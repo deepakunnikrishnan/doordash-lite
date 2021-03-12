@@ -1,11 +1,9 @@
 package com.androidnerds.doordash.domain.mapper.menu;
 
 import com.androidnerds.doordash.data.remote.model.menu.MenuDTO;
-import com.androidnerds.doordash.di.data.MapperModule;
-import com.androidnerds.doordash.domain.mapper.menu.MenuDTOtoDomainMapper;
+import com.androidnerds.doordash.di.MapperModule;
 import com.androidnerds.doordash.domain.model.Menu;
 import com.androidnerds.doordash.testconstant.ApiConstants;
-import com.androidnerds.doordash.testutils.JsonUtils;
 import com.androidnerds.doordash.testutils.MockResponseFileReader;
 import com.google.gson.Gson;
 

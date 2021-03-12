@@ -1,7 +1,7 @@
 package com.androidnerds.doordash.domain.mapper.promotion;
 
 import com.androidnerds.doordash.data.remote.model.MerchantPromotionDTO;
-import com.androidnerds.doordash.di.data.MapperModule;
+import com.androidnerds.doordash.di.MapperModule;
 import com.androidnerds.doordash.domain.model.MerchantPromotion;
 import com.androidnerds.doordash.testconstant.ApiConstants;
 import com.androidnerds.doordash.testutils.MockResponseFileReader;
