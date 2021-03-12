@@ -11,11 +11,14 @@ import com.androidnerds.doordash.domain.model.Menu;
 import com.androidnerds.doordash.domain.model.category.Category;
 import com.androidnerds.doordash.domain.model.menu.MenuDetail;
 
+import javax.inject.Inject;
+
 
 public class MenuDetailDTOtoDomainMapper implements Mapper<MenuDetailDTO, MenuDetail> {
 
-    private ListMapper<CategoryDTO, Category> categoryListMapper;
+    private final ListMapper<CategoryDTO, Category> categoryListMapper;
 
+    @Inject
     public MenuDetailDTOtoDomainMapper(ListMapper<CategoryDTO, Category> categoryListMapper) {
         this.categoryListMapper = categoryListMapper;
     }

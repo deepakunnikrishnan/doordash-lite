@@ -6,14 +6,17 @@ import com.androidnerds.doordash.core.rx.SchedulerProvider;
 
 import org.jetbrains.annotations.NotNull;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Single;
 
 
 public class StoreFeedRemoteDataSource implements IStoreFeedRemoteDataSource {
 
-    private StoreFeedService storeFeedService;
-    private SchedulerProvider schedulerProvider;
+    private final StoreFeedService storeFeedService;
+    private final SchedulerProvider schedulerProvider;
 
+    @Inject
     public StoreFeedRemoteDataSource(StoreFeedService storeFeedService, SchedulerProvider schedulerProvider) {
         this.storeFeedService = storeFeedService;
         this.schedulerProvider = schedulerProvider;

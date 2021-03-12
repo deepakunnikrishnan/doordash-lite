@@ -4,9 +4,12 @@ import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.data.local.entity.StoreStatusEntity;
 import com.androidnerds.doordash.data.remote.model.StoreStatusDTO;
 
+import javax.inject.Inject;
+
 
 public class StoreStatusDTOtoEntityMapper implements Mapper<StoreStatusDTO, StoreStatusEntity> {
 
+    @Inject
     public StoreStatusDTOtoEntityMapper() {
 
     }

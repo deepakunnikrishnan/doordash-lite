@@ -10,6 +10,8 @@ import com.androidnerds.doordash.domain.model.store.Store;
 import com.androidnerds.doordash.domain.model.store.StoreDetail;
 import com.androidnerds.doordash.presentation.restaurant.detail.model.StoreDetailViewData;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.functions.BiFunction;
@@ -20,6 +22,7 @@ public class GetStoreDetailUseCase extends BaseUseCase<Result<StoreDetailViewDat
     private final SchedulerProvider schedulerProvider;
     private final Mapper<StoreDetail, StoreDetailViewData> mapper;
 
+    @Inject
     public GetStoreDetailUseCase(IStoreRepository storeRepository,
                                  Mapper<StoreDetail, StoreDetailViewData> mapper,
                                  SchedulerProvider schedulerProvider) {

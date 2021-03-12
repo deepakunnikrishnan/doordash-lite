@@ -9,15 +9,21 @@ import android.view.animation.AlphaAnimation;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.core.presentation.components.VerticalSpaceItemDecoration;
 import com.androidnerds.doordash.databinding.ActivityRestaurantDetailBinding;
-import com.androidnerds.doordash.di.PresentationModule;
+import com.androidnerds.doordash.di.AppModule;
+import com.androidnerds.doordash.di.DaggerAppComponent;
+import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.menu.CategoryAdapter;
 import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.RestaurantDetailViewModel;
+
+import javax.inject.Inject;
 
 /**
  * Activity displaying the Detail screen for the Restaurant.
@@ -25,8 +31,12 @@ import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.Restaur
  */
 public class RestaurantDetailActivity extends AppCompatActivity {
 
-    private static final String EXTRA_STORE_ID = "storeId";
 
+    @Inject
+    ViewModelFactory viewModelFactory;
+    RestaurantDetailViewModel restaurantDetailViewModel;
+
+    private static final String EXTRA_STORE_ID = "storeId";
     private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR = 0.6f;
     private static final float PERCENTAGE_TO_HIDE_TITLE_DETAILS = 0.3f;
     private static final int ALPHA_ANIMATIONS_DURATION = 200;
@@ -35,8 +45,6 @@ public class RestaurantDetailActivity extends AppCompatActivity {
     private boolean mIsTheTitleContainerVisible = true;
 
     private ActivityRestaurantDetailBinding binding;
-
-    RestaurantDetailViewModel restaurantDetailViewModel;
     private CategoryAdapter categoryAdapter;
 
     /**
@@ -54,6 +62,7 @@ public class RestaurantDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ((DoorDashApplication)getApplication()).getAppComponent().inject(this);
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_restaurant_detail);
         setupActionBar();
@@ -68,8 +77,8 @@ public class RestaurantDetailActivity extends AppCompatActivity {
      */
     private void observeForStoreDetails() {
         long storeId = getIntent().getLongExtra(EXTRA_STORE_ID, -1);
-        restaurantDetailViewModel = PresentationModule.provideRestaurantDetailViewModelFactory(this, storeId)
-                .create(RestaurantDetailViewModel.class);
+        restaurantDetailViewModel = new ViewModelProvider(this, viewModelFactory).get(RestaurantDetailViewModel.class);
+        restaurantDetailViewModel.fetchStoreDetails(storeId);
         restaurantDetailViewModel.getStoreDetail()
                 .observe(this, storeDetailViewData -> {
                     categoryAdapter.submitList(storeDetailViewData.getCategories());

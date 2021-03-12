@@ -1,5 +1,6 @@
 package com.androidnerds.doordash.data.remote.store;
 
+import com.androidnerds.doordash.data.remote.ApiConfig;
 import com.androidnerds.doordash.data.remote.model.menu.detail.MenuDetailDTO;
 import com.androidnerds.doordash.data.remote.service.StoreDetailService;
 import com.androidnerds.doordash.di.data.RemoteModule;
@@ -68,7 +69,7 @@ public class StoreRemoteDataSourceTest {
             }
         });
         storeDetailService = RemoteModule.provideStoreDetailService(
-                RemoteModule.provideRetrofit(ApiConstants.BASE_URL,
+                RemoteModule.provideRetrofit(new ApiConfig(ApiConstants.BASE_URL),
                         RemoteModule.provideOkHttpClient(
                                 new HttpLoggingInterceptor()
                         ),

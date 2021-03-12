@@ -15,9 +15,12 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.databinding.StoreFeedFragmentBinding;
-import com.androidnerds.doordash.di.PresentationModule;
+import com.androidnerds.doordash.di.AppModule;
+import com.androidnerds.doordash.di.DaggerAppComponent;
+import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.RestaurantDetailActivity;
 import com.androidnerds.doordash.presentation.storefeed.list.ItemClickListener;
 import com.androidnerds.doordash.presentation.storefeed.list.StoreItemDiffUtilCallback;
@@ -25,11 +28,16 @@ import com.androidnerds.doordash.presentation.storefeed.list.adapter.StoresListA
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
 
+import javax.inject.Inject;
+
 /**
  * Displays the stores for a specific location as a list.
  * Depends on the {@link StoreFeedViewModel} to provide with the data necessary for the screen.
  */
 public class StoreFeedFragment extends Fragment {
+
+    @Inject
+    ViewModelFactory viewModelFactory;
 
     private StoreFeedViewModel mViewModel;
     private StoreFeedFragmentBinding binding;
@@ -45,8 +53,8 @@ public class StoreFeedFragment extends Fragment {
 
     @Override
     public void onAttach(@NonNull Context context) {
-
         super.onAttach(context);
+        ((DoorDashApplication)requireActivity().getApplication()).getAppComponent().inject(this);
     }
 
     @Override
@@ -62,7 +70,7 @@ public class StoreFeedFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this,
-                PresentationModule.provideStoreFeedViewModelFactory(requireActivity())
+                viewModelFactory
         ).get(StoreFeedViewModel.class);
         setupStoreFeedList();
         bindObserverForStores();

@@ -7,10 +7,13 @@ import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreFeedViewData;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 
+import javax.inject.Inject;
+
 public class StoreFeedToViewMapper implements Mapper<StoreFeed, StoreFeedViewData> {
 
     private ListMapper<Store, StoreItemViewData> mapper;
 
+    @Inject
     public StoreFeedToViewMapper(ListMapper<Store, StoreItemViewData> mapper) {
         this.mapper = mapper;
     }

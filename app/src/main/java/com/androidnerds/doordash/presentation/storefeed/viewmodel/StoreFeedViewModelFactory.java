@@ -7,21 +7,23 @@ import androidx.lifecycle.ViewModelProvider;
 import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
 import com.androidnerds.doordash.core.rx.SchedulerProvider;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
+
 public class StoreFeedViewModelFactory implements ViewModelProvider.Factory {
 
-    private GetStoreFeedUseCase storeFeedUseCase;
-    private SchedulerProvider schedulerProvider;
+    private final StoreFeedViewModel storeFeedViewModel;
 
-    public StoreFeedViewModelFactory(GetStoreFeedUseCase storeFeedUseCase, SchedulerProvider schedulerProvider) {
-        this.storeFeedUseCase = storeFeedUseCase;
-        this.schedulerProvider = schedulerProvider;
+    public StoreFeedViewModelFactory(StoreFeedViewModel storeFeedViewModel) {
+        this.storeFeedViewModel = storeFeedViewModel;
     }
 
+    @SuppressWarnings("unchecked")
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
         if(modelClass.isAssignableFrom(StoreFeedViewModel.class)) {
-            return (T) new StoreFeedViewModel(storeFeedUseCase);
+            return (T) storeFeedViewModel;
         }
         throw new IllegalArgumentException("Unknown ViewModel class");
     }

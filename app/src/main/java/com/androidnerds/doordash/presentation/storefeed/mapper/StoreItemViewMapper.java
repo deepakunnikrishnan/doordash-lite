@@ -12,10 +12,13 @@ import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 import com.androidnerds.doordash.presentation.utils.AppTextUtils;
 
+import javax.inject.Inject;
+
 public class StoreItemViewMapper implements Mapper<Store, StoreItemViewData> {
 
-    private Context context;
+    private final Context context;
 
+    @Inject
     public StoreItemViewMapper(Context context) {
         this.context = context;
     }

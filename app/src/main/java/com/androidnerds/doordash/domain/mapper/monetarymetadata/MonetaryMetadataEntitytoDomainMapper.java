@@ -5,9 +5,12 @@ import com.androidnerds.doordash.data.local.entity.MonetaryMetadataEntity;
 import com.androidnerds.doordash.data.remote.model.MonetaryMetadataDTO;
 import com.androidnerds.doordash.domain.model.MonetaryMetadata;
 
+import javax.inject.Inject;
+
 
 public class MonetaryMetadataEntitytoDomainMapper implements Mapper<MonetaryMetadataEntity, MonetaryMetadata> {
 
+    @Inject
     public MonetaryMetadataEntitytoDomainMapper() {
     }
 

@@ -15,6 +15,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.DoorDash.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.DoorDash.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
     <style name="Theme.DoorDash.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />

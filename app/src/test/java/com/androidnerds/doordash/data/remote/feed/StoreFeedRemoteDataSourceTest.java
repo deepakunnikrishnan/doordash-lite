@@ -1,5 +1,6 @@
 package com.androidnerds.doordash.data.remote.feed;
 
+import com.androidnerds.doordash.data.remote.ApiConfig;
 import com.androidnerds.doordash.data.remote.model.StoreFeedDTO;
 import com.androidnerds.doordash.data.remote.service.StoreFeedService;
 import com.androidnerds.doordash.di.data.RemoteModule;
@@ -69,7 +70,7 @@ public class StoreFeedRemoteDataSourceTest {
             }
         });
         storeFeedService = RemoteModule.provideStoreFeedService(
-                RemoteModule.provideRetrofit(ApiConstants.BASE_URL,
+                RemoteModule.provideRetrofit(new ApiConfig(ApiConstants.BASE_URL),
                         RemoteModule.provideOkHttpClient(
                                 new HttpLoggingInterceptor()
                         ),
