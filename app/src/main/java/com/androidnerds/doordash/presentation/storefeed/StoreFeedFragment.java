@@ -18,8 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.databinding.StoreFeedFragmentBinding;
-import com.androidnerds.doordash.di.AppModule;
-import com.androidnerds.doordash.di.DaggerAppComponent;
 import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.RestaurantDetailActivity;
 import com.androidnerds.doordash.presentation.storefeed.list.ItemClickListener;
@@ -72,8 +70,18 @@ public class StoreFeedFragment extends Fragment {
         mViewModel = new ViewModelProvider(this,
                 viewModelFactory
         ).get(StoreFeedViewModel.class);
+        setupBannerView();
         setupStoreFeedList();
         bindObserverForStores();
+        bindObserverForBannerStatus();
+    }
+
+    private void setupBannerView() {
+        binding.bannerView.setBannerText("Free Delivery through out the day.");
+        binding.bannerView.setOnBannerDismissListener(() -> {
+            //Save the preference to the storage.
+            mViewModel.saveBannerPreference(true);
+        });
     }
 
     /**
@@ -82,6 +90,17 @@ public class StoreFeedFragment extends Fragment {
     private void bindObserverForStores() {
         mViewModel.getStoreFeed()
                 .observe(getViewLifecycleOwner(), storeFeedViewData -> listAdapter.submitList(storeFeedViewData.getStores()));
+    }
+
+    private void bindObserverForBannerStatus() {
+        mViewModel.getBannerStatus()
+                .observe(getViewLifecycleOwner(), status -> {
+                    if(status) {
+                        binding.bannerView.dismiss();
+                    } else {
+                        binding.bannerView.show();
+                    }
+                });
     }
 
     /**

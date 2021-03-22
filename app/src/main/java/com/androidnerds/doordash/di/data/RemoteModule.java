@@ -28,10 +28,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public abstract class RemoteModule {
 
-
-    private static Retrofit retrofit;
-    private static OkHttpClient okHttpClient;
-
     public static OkHttpClient getUnsafeOkHttpClient(HttpLoggingInterceptor loggingInterceptor) {
         try {
             // Create a trust manager that does not validate certificate chains
@@ -83,24 +79,11 @@ public abstract class RemoteModule {
     @Provides
     public static OkHttpClient provideOkHttpClient(HttpLoggingInterceptor loggingInterceptor) {
         return getUnsafeOkHttpClient(loggingInterceptor);
-        /*if(null == okHttpClient) {
-            okHttpClient = getUnsafeOkHttpClient(loggingInterceptor);
-        }
-        return okHttpClient;*/
     }
 
     @Singleton
     @Provides
     public static Retrofit provideRetrofit(ApiConfig apiConfig, OkHttpClient okHttpClient, GsonConverterFactory gsonConverterFactory, RxJava3CallAdapterFactory adapterFactory) {
-        /*if(null == retrofit) {
-            retrofit  = new Retrofit.Builder()
-                    .baseUrl(baseUrl)
-                    .client(okHttpClient)
-                    .addCallAdapterFactory(adapterFactory)
-                    .addConverterFactory(gsonConverterFactory)
-                    .build();
-        }
-        return retrofit;*/
         return new Retrofit.Builder()
                 .baseUrl(apiConfig.getBaseUrl())
                 .client(okHttpClient)

@@ -4,6 +4,7 @@ import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.core.rx.SchedulerProvider;
 import com.androidnerds.doordash.data.local.IStoreFeedLocalDataSource;
+import com.androidnerds.doordash.data.local.UserPreferenceDataSource;
 import com.androidnerds.doordash.data.local.entity.StoreEntity;
 import com.androidnerds.doordash.data.local.store.IStoreLocalDataSource;
 import com.androidnerds.doordash.data.remote.feed.IStoreFeedRemoteDataSource;
@@ -15,6 +16,7 @@ import com.androidnerds.doordash.domain.model.StoreFeed;
 
 import javax.inject.Inject;
 
+import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.core.Observable;
 
 
@@ -22,6 +24,7 @@ public class StoreFeedRepository implements IStoreFeedRepository {
 
     private final IStoreFeedRemoteDataSource storeFeedRemoteDataSource;
     private final IStoreFeedLocalDataSource storeFeedLocalDataSource;
+    private final UserPreferenceDataSource userPreferenceDataSource;
     private final IStoreLocalDataSource storeLocalDataSource;
     private final Mapper<StoreFeedDTO, StoreFeed> storeFeedDTOToDomainMapper;
     private final ListMapper<StoreDTO, StoreEntity> dtoStoreEntityMapper;
@@ -31,11 +34,13 @@ public class StoreFeedRepository implements IStoreFeedRepository {
     public StoreFeedRepository(IStoreFeedRemoteDataSource storeFeedRemoteDataSource,
                                IStoreFeedLocalDataSource storeFeedLocalDataSource,
                                IStoreLocalDataSource storeLocalDataSource,
+                               UserPreferenceDataSource userPreferenceDataSource,
                                Mapper<StoreFeedDTO, StoreFeed> storeFeedDTOToDomainMapper,
                                ListMapper<StoreDTO, StoreEntity> dtoStoreEntityMapper,
                                SchedulerProvider schedulerProvider) {
         this.storeFeedRemoteDataSource = storeFeedRemoteDataSource;
         this.storeFeedLocalDataSource = storeFeedLocalDataSource;
+        this.userPreferenceDataSource = userPreferenceDataSource;
         this.storeLocalDataSource = storeLocalDataSource;
         this.storeFeedDTOToDomainMapper = storeFeedDTOToDomainMapper;
         this.dtoStoreEntityMapper = dtoStoreEntityMapper;
@@ -51,6 +56,16 @@ public class StoreFeedRepository implements IStoreFeedRepository {
                         storeLocalDataSource.insertStores(dtoStoreEntityMapper.map(storeFeedDTO.getStores()));
                     }
                 })
-                .map(storeFeedDTO -> storeFeedDTOToDomainMapper.map(storeFeedDTO));
+                .map(storeFeedDTOToDomainMapper::map);
+    }
+
+    @Override
+    public Completable saveBannerStatus(boolean status) {
+        return this.userPreferenceDataSource.saveBannerStatus(status);
+    }
+
+    @Override
+    public Observable<Boolean> getBannerStatus() {
+        return userPreferenceDataSource.bannerStatus();
     }
 }

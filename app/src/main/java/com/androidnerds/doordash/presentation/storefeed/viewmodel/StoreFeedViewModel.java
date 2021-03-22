@@ -3,13 +3,15 @@ package com.androidnerds.doordash.presentation.storefeed.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.androidnerds.doordash.core.utils.Result;
 import com.androidnerds.doordash.domain.model.Location;
+import com.androidnerds.doordash.domain.usecase.GetBannerStatusUseCase;
 import com.androidnerds.doordash.domain.usecase.GetStoreFeedUseCase;
+import com.androidnerds.doordash.domain.usecase.SaveBannerStatusUseCase;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreFeedViewData;
-import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 
 import javax.inject.Inject;
 
@@ -27,12 +29,27 @@ public class StoreFeedViewModel extends ViewModel {
 
     private final MediatorLiveData<StoreFeedViewData> mediatorLiveData;
     private final GetStoreFeedUseCase getStoreFeedUseCase;
+    private final GetBannerStatusUseCase bannerStatusUseCase;
+    private final SaveBannerStatusUseCase saveBannerStatusUseCase;
+
+    private MutableLiveData<Boolean> _bannerStatus = new MutableLiveData<>();
+    private LiveData<Boolean> bannerStatus = _bannerStatus;
 
     @Inject
-    public StoreFeedViewModel(GetStoreFeedUseCase getStoreFeedUseCase) {
+    public StoreFeedViewModel(GetStoreFeedUseCase getStoreFeedUseCase,
+                              GetBannerStatusUseCase bannerStatusUseCase,
+                              SaveBannerStatusUseCase saveBannerStatusUseCase) {
         this.getStoreFeedUseCase = getStoreFeedUseCase;
+        this.bannerStatusUseCase = bannerStatusUseCase;
+        this.saveBannerStatusUseCase = saveBannerStatusUseCase;
         mediatorLiveData = new MediatorLiveData<>();
         mediatorLiveData.addSource(getStoreFeedUseCase.getLiveData(), this::onFetchStoreFeedResult);
+        mediatorLiveData.addSource(bannerStatusUseCase.getLiveData(), result -> {
+            if(result.getData() != null) {
+                _bannerStatus.postValue(result.getData());
+            }
+        });
+        fetchBannerStatus();
         fetchStoreFeed(DEFAULT_LATITUDE, DEFAULT_LONGITUDE);
     }
 
@@ -40,14 +57,26 @@ public class StoreFeedViewModel extends ViewModel {
         getStoreFeedUseCase.execute(new Location(latitude, longitude), LIMIT, offset);
     }
 
+    private void fetchBannerStatus() {
+        bannerStatusUseCase.execute();
+    }
+
     public LiveData<StoreFeedViewData> getStoreFeed() {
         return mediatorLiveData;
+    }
+
+    public LiveData<Boolean> getBannerStatus() {
+        return bannerStatus;
     }
 
     private void onFetchStoreFeedResult(Result<StoreFeedViewData, Throwable> result) {
         if (result.getData() != null) {
             mediatorLiveData.setValue(result.getData());
         }
+    }
+
+    public void saveBannerPreference(boolean closed) {
+        this.saveBannerStatusUseCase.execute(closed);
     }
 
     @Override

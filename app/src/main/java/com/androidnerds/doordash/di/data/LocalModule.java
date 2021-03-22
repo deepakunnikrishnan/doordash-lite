@@ -1,6 +1,8 @@
 package com.androidnerds.doordash.di.data;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 import androidx.room.Room;
 
@@ -16,16 +18,9 @@ import dagger.Provides;
 @Module
 public abstract class LocalModule {
 
-    private static AppDatabase appDatabase;
-
     @Singleton
     @Provides
     public static AppDatabase provideAppDatabase(Context context) {
-        /*if(null == appDatabase) {
-            appDatabase = Room.databaseBuilder(context, AppDatabase.class, "app-db")
-                    .build();
-        }
-        return appDatabase;*/
         return Room.databaseBuilder(context, AppDatabase.class, "app-db")
                 .build();
     }
@@ -39,4 +34,11 @@ public abstract class LocalModule {
     public static StoreFeedDao provideStoreFeedDao(AppDatabase appDatabase) {
         return appDatabase.storeFeedDao();
     }
+
+    @Singleton
+    @Provides
+    public static SharedPreferences provideSharedPreferences(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context);
+    }
+
 }
