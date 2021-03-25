@@ -20,10 +20,9 @@ import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.databinding.StoreFeedFragmentBinding;
 import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.RestaurantDetailActivity;
-import com.androidnerds.doordash.presentation.storefeed.list.ItemClickListener;
 import com.androidnerds.doordash.presentation.storefeed.list.StoreItemDiffUtilCallback;
 import com.androidnerds.doordash.presentation.storefeed.list.adapter.StoresListAdapter;
-import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
+import com.androidnerds.doordash.presentation.storefeed.list.adapter.StoresPagingDataAdapter;
 import com.androidnerds.doordash.presentation.storefeed.viewmodel.StoreFeedViewModel;
 
 import javax.inject.Inject;
@@ -40,6 +39,7 @@ public class StoreFeedFragment extends Fragment {
     private StoreFeedViewModel mViewModel;
     private StoreFeedFragmentBinding binding;
     private StoresListAdapter listAdapter;
+    private StoresPagingDataAdapter pagingDataAdapter;
 
     public static StoreFeedFragment newInstance() {
         return new StoreFeedFragment();
@@ -63,10 +63,9 @@ public class StoreFeedFragment extends Fragment {
         return binding.getRoot();
     }
 
-
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         mViewModel = new ViewModelProvider(this,
                 viewModelFactory
         ).get(StoreFeedViewModel.class);
@@ -88,8 +87,13 @@ public class StoreFeedFragment extends Fragment {
      * The fragment subscribes to the viewModel for the data required in the screen.
      */
     private void bindObserverForStores() {
-        mViewModel.getStoreFeed()
-                .observe(getViewLifecycleOwner(), storeFeedViewData -> listAdapter.submitList(storeFeedViewData.getStores()));
+        /*mViewModel.getStoreFeed()
+                .observe(getViewLifecycleOwner(), storeFeedViewData -> listAdapter.submitList(storeFeedViewData.getStores()));*/
+
+        mViewModel.getStorePagingData()
+                .observe(getViewLifecycleOwner(), storeItemViewDataPagingData -> {
+                    pagingDataAdapter.submitData(getLifecycle(), storeItemViewDataPagingData);
+                });
     }
 
     private void bindObserverForBannerStatus() {
@@ -109,13 +113,10 @@ public class StoreFeedFragment extends Fragment {
     private void setupStoreFeedList() {
         binding.recyclerViewStores.setLayoutManager(new LinearLayoutManager(requireActivity(), RecyclerView.VERTICAL, false));
         binding.recyclerViewStores.addItemDecoration(new DividerItemDecoration(requireActivity(), DividerItemDecoration.VERTICAL));
-        listAdapter = new StoresListAdapter(new StoreItemDiffUtilCallback(), new ItemClickListener() {
-            @Override
-            public void onItemClicked(StoreItemViewData storeItemViewData) {
-                startActivity(RestaurantDetailActivity.getLaunchIntent(requireActivity(), storeItemViewData.getId()));
-            }
-        });
-        binding.recyclerViewStores.setAdapter(listAdapter);
+        pagingDataAdapter = new StoresPagingDataAdapter(new StoreItemDiffUtilCallback(), storeItemViewData -> startActivity(RestaurantDetailActivity.getLaunchIntent(requireActivity(), storeItemViewData.getId())));
+        binding.recyclerViewStores.setAdapter(pagingDataAdapter);
+        //listAdapter = new StoresListAdapter(new StoreItemDiffUtilCallback(), storeItemViewData -> startActivity(RestaurantDetailActivity.getLaunchIntent(requireActivity(), storeItemViewData.getId())));
+        //binding.recyclerViewStores.setAdapter(listAdapter);
     }
 
 }

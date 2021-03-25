@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.ListAdapter;
+import androidx.paging.PagingDataAdapter;
 
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.databinding.ItemStoreBinding;
@@ -14,11 +14,11 @@ import com.androidnerds.doordash.presentation.storefeed.list.StoreItemDiffUtilCa
 import com.androidnerds.doordash.presentation.storefeed.list.viewholder.StoreItemViewHolder;
 import com.androidnerds.doordash.presentation.storefeed.model.StoreItemViewData;
 
-public class StoresListAdapter extends ListAdapter<StoreItemViewData, StoreItemViewHolder> {
+public class StoresPagingDataAdapter extends PagingDataAdapter<StoreItemViewData, StoreItemViewHolder> {
 
     private final ItemClickListener clickListener;
 
-    public StoresListAdapter(StoreItemDiffUtilCallback callback, ItemClickListener clickListener) {
+    public StoresPagingDataAdapter(StoreItemDiffUtilCallback callback, ItemClickListener clickListener) {
         super(callback);
         this.clickListener = clickListener;
     }

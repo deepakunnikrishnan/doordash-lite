@@ -16,7 +16,7 @@ public interface StoreFeedService {
     @GET("v1/store_feed")
     Single<StoreFeedDTO> getStoreFeed(@Query("lat") double latitude,
                                       @Query("lng") double longitude,
-                                      @Query("limit") double limit,
+                                      @Query("limit") int limit,
                                       @Query("offset") long offset);
 
 }

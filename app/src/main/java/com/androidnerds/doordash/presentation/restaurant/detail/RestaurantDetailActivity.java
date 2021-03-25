@@ -17,8 +17,6 @@ import com.androidnerds.doordash.DoorDashApplication;
 import com.androidnerds.doordash.R;
 import com.androidnerds.doordash.core.presentation.components.VerticalSpaceItemDecoration;
 import com.androidnerds.doordash.databinding.ActivityRestaurantDetailBinding;
-import com.androidnerds.doordash.di.AppModule;
-import com.androidnerds.doordash.di.DaggerAppComponent;
 import com.androidnerds.doordash.presentation.ViewModelFactory;
 import com.androidnerds.doordash.presentation.restaurant.detail.menu.CategoryAdapter;
 import com.androidnerds.doordash.presentation.restaurant.detail.viemodel.RestaurantDetailViewModel;
