@@ -8,7 +8,6 @@ import androidx.paging.rxjava3.PagingRx;
 import com.androidnerds.doordash.core.mapper.ListMapper;
 import com.androidnerds.doordash.core.mapper.Mapper;
 import com.androidnerds.doordash.core.rx.SchedulerProvider;
-import com.androidnerds.doordash.data.local.IStoreFeedLocalDataSource;
 import com.androidnerds.doordash.data.local.UserPreferenceDataSource;
 import com.androidnerds.doordash.data.local.entity.StoreEntity;
 import com.androidnerds.doordash.data.local.store.IStoreLocalDataSource;
@@ -28,15 +27,12 @@ import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Single;
-import io.reactivex.rxjava3.functions.Function;
-import kotlin.jvm.functions.Function1;
 
 
 public class StoreFeedRepository implements IStoreFeedRepository {
 
     private final StoreFeedPagingDataSource storeFeedPagingDataSource;
     private final IStoreFeedRemoteDataSource storeFeedRemoteDataSource;
-    private final IStoreFeedLocalDataSource storeFeedLocalDataSource;
     private final UserPreferenceDataSource userPreferenceDataSource;
     private final IStoreLocalDataSource storeLocalDataSource;
     private final Mapper<StoreFeedDTO, StoreFeed> storeFeedDTOToDomainMapper;
@@ -46,7 +42,6 @@ public class StoreFeedRepository implements IStoreFeedRepository {
 
     @Inject
     public StoreFeedRepository(IStoreFeedRemoteDataSource storeFeedRemoteDataSource,
-                               IStoreFeedLocalDataSource storeFeedLocalDataSource,
                                StoreFeedPagingDataSource storeFeedPagingDataSource,
                                IStoreLocalDataSource storeLocalDataSource,
                                UserPreferenceDataSource userPreferenceDataSource,
@@ -55,7 +50,6 @@ public class StoreFeedRepository implements IStoreFeedRepository {
                                ListMapper<StoreDTO, StoreEntity> dtoStoreEntityMapper,
                                SchedulerProvider schedulerProvider) {
         this.storeFeedRemoteDataSource = storeFeedRemoteDataSource;
-        this.storeFeedLocalDataSource = storeFeedLocalDataSource;
         this.storeFeedPagingDataSource = storeFeedPagingDataSource;
         this.userPreferenceDataSource = userPreferenceDataSource;
         this.storeLocalDataSource = storeLocalDataSource;

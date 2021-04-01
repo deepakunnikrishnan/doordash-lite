@@ -27,4 +27,9 @@ public class StoreLocalDataSource implements IStoreLocalDataSource {
     public Single<StoreEntity> getStore(long id) {
         return storeDao.getStore(id);
     }
+
+    @Override
+    public Single<List<StoreEntity>> getStores() {
+        return storeDao.getAllStores();
+    }
 }

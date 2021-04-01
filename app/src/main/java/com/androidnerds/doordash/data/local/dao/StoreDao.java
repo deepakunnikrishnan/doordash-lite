@@ -25,6 +25,11 @@ public interface StoreDao {
     Completable updateStore(StoreEntity storeEntity);
     @Delete
     Completable deleteStore(StoreEntity storeEntity);
+    @Query("DELETE FROM store")
+    Completable clearAll();
+
+    @Query("SELECT * FROM store")
+    Single<List<StoreEntity>> getAllStores();
 
     @Query("SELECT * FROM store WHERE id = :id")
     Single<StoreEntity> getStore(long id);

@@ -2,7 +2,10 @@ package com.androidnerds.doordash.data.remote.feed
 
 import androidx.paging.PagingState
 import androidx.paging.rxjava3.RxPagingSource
+import com.androidnerds.doordash.core.mapper.ListMapper
 import com.androidnerds.doordash.core.rx.SchedulerProvider
+import com.androidnerds.doordash.data.local.entity.StoreEntity
+import com.androidnerds.doordash.data.local.store.StoreLocalDataSource
 import com.androidnerds.doordash.data.remote.model.LocationDTO
 import com.androidnerds.doordash.data.remote.model.StoreDTO
 import com.androidnerds.doordash.data.remote.model.StoreFeedDTO
@@ -12,7 +15,10 @@ import javax.inject.Inject
 
 class StoreFeedPagingDataSource @Inject constructor(
     private val storeFeedService: StoreFeedService,
-    val schedulerProvider: SchedulerProvider): RxPagingSource<Long, StoreDTO>() {
+    private val storeLocalDataSource: StoreLocalDataSource,
+    private val dtoStoreEntityMapper: ListMapper<StoreDTO, StoreEntity>,
+    val schedulerProvider: SchedulerProvider
+): RxPagingSource<Long, StoreDTO>() {
 
     var locationDTO: LocationDTO? = null
     var limit: Int = 0
@@ -30,14 +36,15 @@ class StoreFeedPagingDataSource @Inject constructor(
         return storeFeedService
             .getStoreFeed(locationDTO!!.latitude, locationDTO!!.longitude, limit, offset)
             .subscribeOn(schedulerProvider.io())
+            .doOnSuccess { storeLocalDataSource.insertStores(dtoStoreEntityMapper.map(it.stores)) }
             .map { storeFeed -> toLoadResult(storeFeed, limit, offset) }
     }
 
     private fun toLoadResult(storeFeed: StoreFeedDTO, limit: Int, position: Long): LoadResult<Long, StoreDTO> {
         return LoadResult.Page(
             data = storeFeed.stores,
-            prevKey = if(position.equals(0L)) null else position - limit,
-            nextKey = if(storeFeed.numResult.equals(position)) null else position + limit
+            prevKey = if (position.equals(0L)) null else position - limit,
+            nextKey = if (storeFeed.numResult.equals(position)) null else position + limit
         )
     }
 

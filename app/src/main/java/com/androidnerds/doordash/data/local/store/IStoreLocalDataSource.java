@@ -11,4 +11,6 @@ public interface IStoreLocalDataSource {
     List<Long> insertStores(List<StoreEntity> storeEntityList);
 
     Single<StoreEntity> getStore(long id);
+
+    Single<List<StoreEntity>> getStores();
 }
