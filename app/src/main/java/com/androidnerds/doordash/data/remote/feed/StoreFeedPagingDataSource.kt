@@ -43,9 +43,8 @@ class StoreFeedPagingDataSource @Inject constructor(
     private fun toLoadResult(storeFeed: StoreFeedDTO, limit: Int, position: Long): LoadResult<Long, StoreDTO> {
         return LoadResult.Page(
             data = storeFeed.stores,
-            prevKey = if (position.equals(0L)) null else position - limit,
-            nextKey = if (storeFeed.numResult.equals(position)) null else position + limit
-        )
+            prevKey = null,
+            nextKey = if(storeFeed.nextOffset == 0L) null else storeFeed.nextOffset)
     }
 
 }
