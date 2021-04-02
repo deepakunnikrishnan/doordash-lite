@@ -54,7 +54,7 @@ public class StoreFeedViewModel extends ViewModel {
         this.bannerStatusUseCase = bannerStatusUseCase;
         this.saveBannerStatusUseCase = saveBannerStatusUseCase;
         mediatorLiveData = new MediatorLiveData<>();
-        mediatorLiveData.addSource(getStoreFeedUseCase.getLiveData(), this::onFetchStoreFeedResult);
+        //mediatorLiveData.addSource(getStoreFeedUseCase.getLiveData(), this::onFetchStoreFeedResult);
         mediatorLiveData.addSource(bannerStatusUseCase.getLiveData(), result -> {
             if(result.getData() != null) {
                 _bannerStatus.postValue(result.getData());

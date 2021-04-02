@@ -78,7 +78,6 @@ public class StoreFeedFragment extends Fragment {
     private void setupBannerView() {
         binding.bannerView.setBannerText("Free Delivery through out the day.");
         binding.bannerView.setOnBannerDismissListener(() -> {
-            //Save the preference to the storage.
             mViewModel.saveBannerPreference(true);
         });
     }
@@ -89,7 +88,8 @@ public class StoreFeedFragment extends Fragment {
     private void bindObserverForStores() {
         /*mViewModel.getStoreFeed()
                 .observe(getViewLifecycleOwner(), storeFeedViewData -> listAdapter.submitList(storeFeedViewData.getStores()));*/
-
+        mViewModel.getStoreFeed()
+                .observe(getViewLifecycleOwner(), storeFeedViewData -> {});
         mViewModel.getStorePagingData()
                 .observe(getViewLifecycleOwner(), storeItemViewDataPagingData -> {
                     pagingDataAdapter.submitData(getLifecycle(), storeItemViewDataPagingData);
